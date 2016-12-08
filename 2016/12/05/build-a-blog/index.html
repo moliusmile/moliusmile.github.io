@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        blog写作常用指令｜moliu&#39;s blog
+        moliu&#39;s Blog 建站小记｜moliu&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="http://moliusmile.github.io/2016/12/06/Hexo-note/">
+    <link rel="canonical" href="http://moliusmile.github.io/2016/12/05/build-a-blog/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -161,12 +161,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>blog写作常用指令</h1>
+                    <h1>moliu&#39;s Blog 建站小记</h1>
                     
                     <span class="meta">
                          作者 moliu
                         <span>
-                          日期 2016-12-06
+                          日期 2016-12-05
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -174,11 +174,8 @@
                         <a class="tag" href="/tags/#hexo"
                            title="hexo">hexo</a>
                         
-                        <a class="tag" href="/tags/#markdown"
-                           title="markdown">markdown</a>
-                        
-                        <a class="tag" href="/tags/#note"
-                           title="note">note</a>
+                        <a class="tag" href="/tags/#github"
+                           title="github">github</a>
                         
                     </div>
                 </div>
@@ -187,7 +184,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            blog写作常用指令
+            moliu's Blog 建站小记
         </span>
     </div>
 </header>
@@ -198,43 +195,54 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>设置和指令完整版的请查看：</p>
+                <h2 id="念念不忘-必有行动"><a href="#念念不忘-必有行动" class="headerlink" title="念念不忘 必有行动"></a>念念不忘 必有行动</h2><p>搭建自己专属blog的想法由来已久，萌发于半年前见到知乎大神<a href="http://aljun.me/" target="_blank" rel="external">Aljun</a>的Blog，孕育于几个月前将自己的知乎签名改为<code>想做数据分析，想搭个人博客的经济学girl~ Hamilton粉</code>。而化想法为行动的是四天前（12月1日）的一个清晨，某位学长向我推荐了“<a href="http://moliu.me/2016/12/05/Two-Questions/" target="_blank" rel="external">科学的方法 公正的态度 果断的决心</a>”这篇文章。顿感相见恨晚忍不住和大家分享，就匆匆注册了<a href="http://www.jianshu.com/p/45664a8af832" target="_blank" rel="external">简书</a>然后发了上去。后来学长居然给我打赏了30大洋，理由是想看看简书平台提现时是否有手续费，结果是——<br><img src="http://ohpptajtc.bkt.clouddn.com/jianshu.PNG" alt=""><br>结论，好坑。BLOG搭搭搭，开拓属于自己的一片小空间，自由自在~无拘无束~<br>finally，从1号晚上到今天上午，moliu’s blog终于搭建完成。进展大概如下</p>
+<h2 id="12月1日"><a href="#12月1日" class="headerlink" title="12月1日"></a>12月1日</h2><p>用github搭建Blog1.0版，此时的blog没目录，样式也不好看，教程参考</p>
 <ul>
-<li>官方文档<a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo Docs</a></li>
-<li>中文总结版<a href="http://www.ituring.com.cn/article/199035" target="_blank" rel="external">Hexo Docs</a> </li>
+<li><a href="http://blog.csdn.net/renfufei/article/details/37725057/" target="_blank" rel="external">创建GitHub技术博客全攻略</a></li>
 </ul>
-<p>我在这里把自己常用以及之后可能会用到的几条指令做一下梳理。</p>
-<h2 id="blog写作指令"><a href="#blog写作指令" class="headerlink" title="blog写作指令"></a>blog写作指令</h2><h3 id="标题栏"><a href="#标题栏" class="headerlink" title="标题栏"></a>标题栏</h3><ul>
-<li>注意每个符号后空一格。<blockquote>
-<p>layout: post<br>title: Hello World<br>subtitle: hi, I’m moliu”<br>date: 2016-12-06 12:00<br>author: moliu<br>header-img: “img/post-default.jpg”    #这里是该篇文章的背景图<br>tags: </p>
+<h2 id="12月2日"><a href="#12月2日" class="headerlink" title="12月2日"></a>12月2日</h2><p>这一天做了三件事，二成功一失败。<code>先讲失败的</code>，经小伙伴指点和查阅资料，准备利用github+<a href="http://jekyll.com.cn/" target="_blank" rel="external">jekyll</a>搭一个blog。好处是不用自己搭服务器，上手容易<a href="http://jekyllthemes.org/" target="_blank" rel="external">jekyll的样式</a>多。但jekyll在windows环境下使用比较麻烦，需要先后安装Ruby、DevKit、Rough。教程主要看这篇<a href="https://www.zybuluo.com/mdeditor#591278" target="_blank" rel="external">[环境搭建]Windows下安装Ruby和Jekyll</a>。然后windows下各种坑（差点以为失足少女要放弃了），一直在安装Devkit时出错。进行到第三天时放弃jekyll，失败。<code>第一件成功</code>是在<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册域名，在<code>moliu.me</code> <code>yangshuxin.com</code> <code>yangshuxin.me</code> 三个域名之间纠结了好久最后选了第一个。（表示好想把另外两个也买下啊啊，毕竟专属）。买好域名之后需要将github进行绑定，这样才能在登录<code>moliusmile.github.io</code>时自动跳转到<code>moliu.me</code>，教程参考</p>
 <ul>
-<li>diary</li>
-<li>moliu  </li>
+<li><a href="https://segmentfault.com/a/1190000005602881" target="_blank" rel="external">GitHub Pages 绑定来自阿里云的域名</a>。</li>
 </ul>
+<p><code>第二件成功</code>的是将安装git到本地，目的是本地编辑好之后可以push到github上，其中SSH设置略麻烦。</p>
+<h2 id="12月3日"><a href="#12月3日" class="headerlink" title="12月3日"></a>12月3日</h2><p>继续前一天的jekyll的失败安装，然后转向另一个对windows系统比较亲近的Hexo,安装环境是nodejs。这两篇教程不错：</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000005602881" target="_blank" rel="external">windows 10 下配置安装node.js</a></li>
+<li><a href="http://www.jianshu.com/p/0f4cc12a1635" target="_blank" rel="external">用hexo在github上挂博客</a></li>
+</ul>
+<p>还欣赏了官网和知乎上各种Hexo主题，觉得<a href="https://haojen.github.io/" target="_blank" rel="external">Haojen</a>以及<a href="http://www.ezlippi.com/" target="_blank" rel="external">浮生志</a>这两个还不错。前者有图片背景和头像，后者更简洁一些。（我最后选择了前者）。</p>
+<h2 id="12月4日"><a href="#12月4日" class="headerlink" title="12月4日"></a>12月4日</h2><p>这一天还在安装hexo,其中遇到各种bug，百度+google一般都能解决，其中遇到几个关键性错误,这里重点mark一下：</p>
+<h4 id="一、淘宝npm源的使用"><a href="#一、淘宝npm源的使用" class="headerlink" title="一、淘宝npm源的使用"></a>一、淘宝npm源的使用</h4><p><strong>问题</strong>：安装hexo时,在GitBash中运行npm install -g hexo -cli 总是超时报错，原因是国内使用npm时总是被block（有翻墙工具也没用啊~衰~）。<br><strong>解决</strong>：全局配置淘宝镜像，打开.npmrc文件（在用户主目录下）<br>加入以下配置信息：</p>
+<pre><code>registry = http://registry.npm.taobao.org
+</code></pre><h4 id="二、系统环境的配置"><a href="#二、系统环境的配置" class="headerlink" title="二、系统环境的配置"></a>二、系统环境的配置</h4><p><strong>问题</strong>：hexo已经安装成功，但查看hexo version时却显示 hexo:command not found。原因是<em>我的电脑-属性-高级系统设置-环境变量-<code>系统变量</code></em>中需要增加新内容。<br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_error.png" alt="此处输入图片的描述"><br><strong>解决</strong>：记下hexo的安装路径，然后添加到系统变量中。比如我这里是<code>D:\nodejs\node_global</code><br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_path.png" alt="此处输入图片的描述"><br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_update.png" alt="此处输入图片的描述"></p>
+<h4 id="三、修改config-yml中deploy之后"><a href="#三、修改config-yml中deploy之后" class="headerlink" title="三、修改config.yml中deploy之后"></a>三、修改config.yml中deploy之后</h4><p><strong>错误</strong>：</p>
+<blockquote>
+<p>$ hexo d<br>ERROR Deployer not found: Git</p>
 </blockquote>
-</li>
+<p><strong>解决</strong>：</p>
+<blockquote>
+<p>npm install hexo-deployer-git –save</p>
+</blockquote>
+<p>然后hexo就安装成功了，屏幕跳出如下画面时，我瞬间感觉打开了新世界的大门。<br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_picture.png" alt="此处输入图片的描述"></p>
+<h2 id="12月5日"><a href="#12月5日" class="headerlink" title="12月5日"></a>12月5日</h2><p>按照模板教程<a href="https://haojen.github.io/2016/08/06/Anisina-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_blank" rel="external">Anisina-中文使用教程</a>一点点配置，一切以好看好看为首要标准，然后就是你们现在看到的<a href="http://moliu.me/" target="_blank" rel="external">moliu’s Blog</a>啦  ^。^<br>还发现了好玩的<a href="http://emoji.codes" target="_blank" rel="external">emoji</a>,可以使文章更可爱 ：smile:</p>
+<h2 id="功能总结和to-do-list"><a href="#功能总结和to-do-list" class="headerlink" title="功能总结和to do list"></a>功能总结和to do list</h2><p> [get] 评论功能<br> [get] 百度统计<br> [get] 顶端爱心<br> [get] tag检索<br> [get] 友情链接<br> [non] 打赏功能<br> [non] 点赞功能<br> [non] 版权说明<br> [non] swiftfy搜索<br> [non] AboutMe页面，介绍BLOG主<br> [non] 评论功能完善，最好不用第三方插件（觉得<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>的评论插件略丑，<a href="www.disqus.com">Disqus</a>因为墙内很多人上不了）。现在暂时用的是多说。</p>
+<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><ul>
+<li>友链里的各位，他们给了我许多技术上的指导。</li>
+<li>将Shadowsocks赠与我的zebang，翻墙速度还是很不错的。</li>
+<li>看完此文的各位，真诚期待您留下宝贵的建议，让我将这片小小的空间建设地更好。</li>
 </ul>
-<h2 id="hexo常用指令"><a href="#hexo常用指令" class="headerlink" title="hexo常用指令"></a>hexo常用指令</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>node -v                  #看nodejs版本<br>npm -v                   #看npm版本<br>npm install -g hexo      #安装hexo<br>hexo init                #选一个空的文件夹，然后右键开始创建<br>hexo install             #安装依赖包</p>
-<h3 id="写博文"><a href="#写博文" class="headerlink" title="写博文"></a>写博文</h3><p>cd d:hexo                #转到d:hexo路径下<br>hexo n postName        #n==new 新建文章<br>hexo new poetry ‘your-poetry-name’  #古诗布局（只有该主题有此功能）<br>hexo publish title       #新建草稿，位于_drafts目录下，不会发布到网站上<br>hexo new page “pageName” #新建页面<br>hexo g                     #g==generate 生成静态页面至public目录<br>hexo s                   #s==server 开启预览访问端口（<a href="http://localhost:4000，" target="_blank" rel="external">http://localhost:4000，</a> ‘ctrl + c’关闭server）<br>hexo d                   #d==deploy 将.deploy目录部署到GitHub<br>hexo help                #查看帮助<br>hexo -v                  #v=version 查看Hexo的版本</p>
-<h3 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a>复合命令</h3><p>hexo d -g           #生成加部署<br>hexo s -g           #生成加预览 </p>
-<h2 id="图片资源"><a href="#图片资源" class="headerlink" title="图片资源"></a>图片资源</h2><p><a href="https://unsplash.com/" target="_blank" rel="external">Unsplash</a> </p>
-<h2 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h2><p><a href="https://git-scm.com/book/en/v2" target="_blank" rel="external">Pro Git</a><br><a href="http://www.w3school.com.cn/h.asp" target="_blank" rel="external">HTML教程</a></p>
+<p><img src="http://oho5zsu61.bkt.clouddn.com/favicon_love.png" alt="此处输入图片的描述"></p>
 
                 <hr>
                 
                 <!-- 多说 Share start -->
                 <div class="ds-share"
                      style="text-align: right"
-                     data-thread-key="2016/12/06/Hexo-note/"
-                     data-title="blog写作常用指令"
-                     data-url="http://moliusmile.github.io/2016/12/06/Hexo-note/"
+                     data-thread-key="2016/12/05/build-a-blog/"
+                     data-title="moliu&#39;s Blog 建站小记"
+                     data-url="http://moliusmile.github.io/2016/12/05/build-a-blog/"
                      data-images=""
-                     data-content="设置和指令完整版的请查看：
-
-官方文档Hexo Docs
-中文总结版Hexo Docs 
-
-我... | moliu&#39;s blog ">
+                     data-content="念念不忘 必有行动搭建自己专属blog的想法由来已久，萌发于半年前见到知乎大神Aljun的Bl... | moliu&#39;s blog ">
                     <div class="ds-share-inline">
                         <ul class="ds-share-icons-16">
                             <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -252,10 +260,15 @@
 
                 <ul class="pager">
                     
+                    <li class="previous">
+                        <a href="/2016/12/06/Hexo-note/" data-toggle="tooltip" data-placement="top"
+                           title="blog写作常用指令">&larr; Previous Post</a>
+                    </li>
+                    
                     
                     <li class="next">
-                        <a href="/2016/12/05/build-a-blog/" data-toggle="tooltip" data-placement="top"
-                           title="moliu's Blog 建站小记">Next Post &rarr;</a>
+                        <a href="/2016/12/05/Two-Questions/" data-toggle="tooltip" data-placement="top"
+                           title="科学的方法 公正的态度 果断的决心">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -264,9 +277,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                         data-thread-key="2016/12/06/Hexo-note/"
-                         data-title="blog写作常用指令"
-                         data-url="http://moliusmile.github.io/2016/12/06/Hexo-note/">
+                         data-thread-key="2016/12/05/build-a-blog/"
+                         data-title="moliu&#39;s Blog 建站小记"
+                         data-url="http://moliusmile.github.io/2016/12/05/build-a-blog/">
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -278,7 +291,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#blog写作指令"><span class="toc-text">blog写作指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#标题栏"><span class="toc-text">标题栏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo常用指令"><span class="toc-text">hexo常用指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写博文"><span class="toc-text">写博文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复合命令"><span class="toc-text">复合命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片资源"><span class="toc-text">图片资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#学习资料"><span class="toc-text">学习资料</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#念念不忘-必有行动"><span class="toc-text">念念不忘 必有行动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月1日"><span class="toc-text">12月1日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月2日"><span class="toc-text">12月2日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月3日"><span class="toc-text">12月3日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月4日"><span class="toc-text">12月4日</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、淘宝npm源的使用"><span class="toc-text">一、淘宝npm源的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、系统环境的配置"><span class="toc-text">二、系统环境的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、修改config-yml中deploy之后"><span class="toc-text">三、修改config.yml中deploy之后</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月5日"><span class="toc-text">12月5日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#功能总结和to-do-list"><span class="toc-text">功能总结和to do list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#鸣谢"><span class="toc-text">鸣谢</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -303,11 +316,8 @@
                         <a class="tag" href="/tags/#hexo"
                            title="hexo">hexo</a>
                         
-                        <a class="tag" href="/tags/#markdown"
-                           title="markdown">markdown</a>
-                        
-                        <a class="tag" href="/tags/#note"
-                           title="note">note</a>
+                        <a class="tag" href="/tags/#github"
+                           title="github">github</a>
                         
                     </div>
                 </section>

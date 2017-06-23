@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        moliu&#39;s Blog 建站小记｜moliu&#39;s blog
+        《亲密行为》 [英]德斯蒙德·莫利斯｜moliu&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="http://moliusmile.github.io/2016/12/05/build-a-blog/">
+    <link rel="canonical" href="http://moliusmile.github.io/2017/06/23/Intimate-Behaviour/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -161,21 +161,18 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>moliu&#39;s Blog 建站小记</h1>
+                    <h1>《亲密行为》 [英]德斯蒙德·莫利斯</h1>
                     
                     <span class="meta">
                          author moliu
                         <span>
-                         time 2016-12-05
+                         time 2017-06-23
                          </span>
                     </span>
                     <div class="tags text-center">
                         
-                        <a class="tag" href="/tags/#hexo"
-                           title="hexo">hexo</a>
-                        
-                        <a class="tag" href="/tags/#github"
-                           title="github">github</a>
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
                         
                     </div>
                 </div>
@@ -184,7 +181,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            moliu's Blog 建站小记
+            《亲密行为》 [英]德斯蒙德·莫利斯
         </span>
     </div>
 </header>
@@ -195,54 +192,23 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h2 id="念念不忘-必有行动"><a href="#念念不忘-必有行动" class="headerlink" title="念念不忘 必有行动"></a>念念不忘 必有行动</h2><p>搭建自己专属blog的想法由来已久，萌发于半年前见到知乎大神<a href="http://aljun.me/" target="_blank" rel="external">Aljun</a>的Blog，孕育于几个月前将自己的知乎签名改为<code>想做数据分析，想搭个人博客的经济学girl~ Hamilton粉</code>。而化想法为行动的是四天前（12月1日）的一个清晨，某位学长向我推荐了“<a href="http://moliu.me/2016/12/05/Two-Questions/" target="_blank" rel="external">科学的方法 公正的态度 果断的决心</a>”这篇文章。顿感相见恨晚忍不住和大家分享，就匆匆注册了<a href="http://www.jianshu.com/p/45664a8af832" target="_blank" rel="external">简书</a>然后发了上去。后来学长居然给我打赏了30大洋，理由是想看看简书平台提现时是否有手续费，结果是——<br><img src="http://ohpptajtc.bkt.clouddn.com/jianshu.PNG" alt=""><br>结论，好坑。BLOG搭搭搭，开拓属于自己的一片小空间，自由自在~无拘无束~<br>finally，从1号晚上到今天上午，moliu’s blog终于搭建完成。进展大概如下</p>
-<h2 id="12月1日"><a href="#12月1日" class="headerlink" title="12月1日"></a>12月1日</h2><p>用github搭建Blog1.0版，此时的blog没目录，样式也不好看，教程参考</p>
-<ul>
-<li><a href="http://blog.csdn.net/renfufei/article/details/37725057/" target="_blank" rel="external">创建GitHub技术博客全攻略</a></li>
-</ul>
-<h2 id="12月2日"><a href="#12月2日" class="headerlink" title="12月2日"></a>12月2日</h2><p>这一天做了三件事，二成功一失败。<code>先讲失败的</code>，经小伙伴指点和查阅资料，准备利用github+<a href="http://jekyll.com.cn/" target="_blank" rel="external">jekyll</a>搭一个blog。好处是不用自己搭服务器，上手容易<a href="http://jekyllthemes.org/" target="_blank" rel="external">jekyll的样式</a>多。但jekyll在windows环境下使用比较麻烦，需要先后安装Ruby、DevKit、Rough。教程主要看这篇<a href="https://www.zybuluo.com/mdeditor#591278" target="_blank" rel="external">[环境搭建]Windows下安装Ruby和Jekyll</a>。然后windows下各种坑（差点以为失足少女要放弃了），一直在安装Devkit时出错。进行到第三天时放弃jekyll，失败。<code>第一件成功</code>是在<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册域名，在<code>moliu.me</code> <code>yangshuxin.com</code> <code>yangshuxin.me</code> 三个域名之间纠结了好久最后选了第一个。（表示好想把另外两个也买下啊啊，毕竟专属）。买好域名之后需要将github进行绑定，这样才能在登录<code>moliusmile.github.io</code>时自动跳转到<code>moliu.me</code>，教程参考</p>
-<ul>
-<li><a href="http://blog.csdn.net/qq_29232943/article/details/52786603" target="_blank" rel="external">GitHub Pages 绑定来自阿里云的域名</a>。</li>
-</ul>
-<p><code>第二件成功</code>的是将安装git到本地，目的是本地编辑好之后可以push到github上，其中SSH设置略麻烦。</p>
-<h2 id="12月3日"><a href="#12月3日" class="headerlink" title="12月3日"></a>12月3日</h2><p>继续前一天的jekyll的失败安装，然后转向另一个对windows系统比较亲近的Hexo,安装环境是nodejs。这两篇教程不错：</p>
-<ul>
-<li><a href="https://segmentfault.com/a/1190000005602881" target="_blank" rel="external">windows 10 下配置安装node.js</a></li>
-<li><a href="http://www.jianshu.com/p/0f4cc12a1635" target="_blank" rel="external">用hexo在github上挂博客</a></li>
-</ul>
-<p>还欣赏了官网和知乎上各种Hexo主题，觉得<a href="https://haojen.github.io/" target="_blank" rel="external">Haojen</a>以及<a href="http://www.ezlippi.com/" target="_blank" rel="external">浮生志</a>这两个还不错。前者有图片背景和头像，后者更简洁一些。（我最后选择了前者）。</p>
-<h2 id="12月4日"><a href="#12月4日" class="headerlink" title="12月4日"></a>12月4日</h2><p>这一天还在安装hexo,其中遇到各种bug，百度+google一般都能解决，其中遇到几个关键性错误,这里重点mark一下：</p>
-<h4 id="一、淘宝npm源的使用"><a href="#一、淘宝npm源的使用" class="headerlink" title="一、淘宝npm源的使用"></a>一、淘宝npm源的使用</h4><p><strong>问题</strong>：安装hexo时,在GitBash中运行npm install -g hexo -cli 总是超时报错，原因是国内使用npm时总是被block（有翻墙工具也没用啊~衰~）。<br><strong>解决</strong>：全局配置淘宝镜像，打开.npmrc文件（在用户主目录下）<br>加入以下配置信息：</p>
-<pre><code>registry = http://registry.npm.taobao.org
-</code></pre><h4 id="二、系统环境的配置"><a href="#二、系统环境的配置" class="headerlink" title="二、系统环境的配置"></a>二、系统环境的配置</h4><p><strong>问题</strong>：hexo已经安装成功，但查看hexo version时却显示 hexo:command not found。原因是<em>我的电脑-属性-高级系统设置-环境变量-<code>系统变量</code></em>中需要增加新内容。<br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_error.png" alt="此处输入图片的描述"><br><strong>解决</strong>：记下hexo的安装路径，然后添加到系统变量中。比如我这里是<code>D:\nodejs\node_global</code><br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_path.png" alt="此处输入图片的描述"><br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_update.png" alt="此处输入图片的描述"></p>
-<h4 id="三、修改config-yml中deploy之后"><a href="#三、修改config-yml中deploy之后" class="headerlink" title="三、修改config.yml中deploy之后"></a>三、修改config.yml中deploy之后</h4><p><strong>错误</strong>：</p>
-<blockquote>
-<p>$ hexo d<br>ERROR Deployer not found: Git</p>
-</blockquote>
-<p><strong>解决</strong>：</p>
-<blockquote>
-<p>npm install hexo-deployer-git –save</p>
-</blockquote>
-<p>然后hexo就安装成功了，屏幕跳出如下画面时，我瞬间感觉打开了新世界的大门。<br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_picture.png" alt="此处输入图片的描述"></p>
-<h2 id="12月5日"><a href="#12月5日" class="headerlink" title="12月5日"></a>12月5日</h2><p>按照模板教程<a href="https://haojen.github.io/2016/08/06/Anisina-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_blank" rel="external">Anisina-中文使用教程</a>一点点配置，一切以好看好看为首要标准，然后就是你们现在看到的<a href="http://moliu.me/" target="_blank" rel="external">moliu’s Blog</a>啦  ^。^<br>还发现了好玩的<a href="http://emoji.codes" target="_blank" rel="external">emoji</a>,可以使文章更可爱 ：smile:</p>
-<h2 id="功能总结和to-do-list"><a href="#功能总结和to-do-list" class="headerlink" title="功能总结和to do list"></a>功能总结和to do list</h2><p> [get] 评论功能<br> [get] 百度统计<br> [get] 顶端爱心<br> [get] tag检索<br> [get] 友情链接<br> [get] AboutMe页面<br> [non] 打赏功能<br> [non] 点赞功能<br> [non] 版权说明<br> [non] swiftfy搜索<br> [non] 评论功能完善，最好不用第三方插件（觉得<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>的评论插件略丑，<a href="www.disqus.com">Disqus</a>因为墙内很多人上不了）。现在暂时用的是多说。</p>
-<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><ul>
-<li>友链里的各位，他们给了我许多技术上的指导。</li>
-<li>将Shadowsocks赠与我的zebang，翻墙速度还是很不错的。</li>
-<li>看完此文的各位，真诚期待您留下宝贵的建议，让我将这片小小的空间建设地更好。</li>
-</ul>
-<p><img src="http://oho5zsu61.bkt.clouddn.com/favicon_love.png" alt="此处输入图片的描述"></p>
+                <h2 id="第一章-亲密行为的根源"><a href="#第一章-亲密行为的根源" class="headerlink" title="第一章 亲密行为的根源"></a>第一章 亲密行为的根源</h2><p>作者反复强调，婴幼期和童年期父母的养育方式对人生的亲密行为产生决定性的影响：“我追寻从子宫到墓园的亲密行为模式，详细描绘了生命早期的各个阶段，成年后的各个阶段则一掠而过。”<br>[13]如果不希望婴儿下一个阶段的成长“延迟”，那么，正如胎儿必须要离开子宫一样，新生儿也必须要离开襁褓。<br>从婴儿期到青春期的每一个阶段，如果要让子女顺利度过，安然成长，父母和子女都应该有相应形式的亲热、身体接触与爱抚。如果父母在任何一个阶段的亲密行为提前或滞后，麻烦问题就随之而起。<br>[22]青春期以后，年轻的孩子离开家去住；从身体接触的观点看，这仿佛是体会第二次降生，家庭的子宫像母亲的子宫一样被放弃了。亲密行为的原生序列是“抱紧我/放下我/别管我”，离家居住时，这个序列倒过来回到源头。</p>
+<h2 id="第二章-两性亲密行为的诱因"><a href="#第二章-两性亲密行为的诱因" class="headerlink" title="第二章 两性亲密行为的诱因"></a>第二章 两性亲密行为的诱因</h2><p>该章作者审视成年人的亲密行为，概览性亲密行为的各种信号，分两步走。第一步根据人体性感部位扫描，分别展示胯间、肚脐、臀部、腿部、腹部、腰部、乳房、肌肤、肩头、颌骨、面颊、眼镜、眉毛、面孔和头发的性感信号；第二步把人体作为一个整体来观察，研究人体接受或排斥亲密行为的这种信号。<br>[48]成年女人丰盈的曲线基本上和为人母阶段的生活相联系，而不是和求爱期间的生活相联系。其证据是：每生一个孩子，已婚女人的体重就增加七磅，而未婚女人同期的体重只增加两磅。其中的教益是，如果女人想要保持少女的身段，她就必须是处女。从生物学的角度看，无论其年龄，未婚的女人仍然在向潜在的配偶展示自己，所以她往往要保持身材，以适应求爱的语境。一旦结婚，她不知不觉就进入了“舒服的”妈妈体型，她的身体曲线就开始发出妈妈阶段的信号。<br>[49]苗条的女孩子身段是男人视觉上欣赏的体形——这是凝视、触摸、亲吻和爱恋的体形。更丰满的成熟女子体形是他们多年厮守、做爱的体形。也许，这里的变化是理想的视觉体形向理想的触摸体形的变化。</p>
+<h2 id="第三章-两性亲密行为"><a href="#第三章-两性亲密行为" class="headerlink" title="第三章 两性亲密行为"></a>第三章 两性亲密行为</h2><p>成年人的求爱过程可以分解为12个阶段，它们是：（1）眼对身阶段（2）眼对眼阶段（3）话对话阶段（4）手对手阶段（5）臂搭肩阶段（6）臂挽腰阶段（7）嘴对嘴阶段（8）手对头阶段（9）手对身阶段（10）嘴对乳房阶段（11）手对生殖器阶段（12）生殖器对生殖器阶段。这12个阶段的变异有三种主要形式：过程的压缩；阶段的调整；模式的细化。<br>[65]从亲密行为的角度看，人生分为婴儿期、童年期和成年期。机敏的警戒取代了盲目的信赖，独立取代了依靠。婴儿期温柔的亲密行为让位于童年期欢乐的游戏，继之而起的是成年期困难的社会交往。<br>[66]对小心谨慎、精打细算的成人而言，步入爱情关系似乎是危险的事情。成人对“放弃”和信赖的抗拒是异常顽强的。爱情打破一切讨价还价的规则，而讨价还价的规则是他在其他一切成人关系里习惯成自然的规则。没有大脑低级神经中枢的帮助，大脑高级神经中枢是不会允许爱情关系的。<br>[82]也许，今天享受性自由的年轻人面临的最大危险是经济问题，他们仍然生活在复杂的、以经济为基础的社会里。<br>[83]对那些放纵的、无爱性交的人而言，最后发泄那个阶段的精致化是值得渴望的。如果那种事既失去了有力的个人关系，又失去强烈的情感投入，那就必须要给它强烈的肉体报偿加码。<br>[84]当然，作为性行为愉悦和嬉戏的补充，这些模式并无危害，但如果痴迷的态度取代并排斥了男女双方的情感纽带，其终极后果就是减少男女关系的真正价值。它们可能会使性过程的某一要素更加精致，但总体上却削弱了性爱的价值。</p>
+<h2 id="第四章-社交亲密行为"><a href="#第四章-社交亲密行为" class="headerlink" title="第四章 社交亲密行为"></a>第四章 社交亲密行为</h2><p>作者把一切社交行为里的身体接触都追溯到妈妈对婴儿的两个亲昵动作：拥抱和拍背。他又认为，社交行为里的身体接触都是拥抱和拍背动作的片段，且都是没有性含义的身体接触。莫利斯把这些动作片段分为八大类：（1）正面的贴身拥抱（2）搂肩式拥抱（3）手搭肩（4）手臂挽手臂（5）手拉手（6）头部接触（7）亲吻（8）握手。对于亲吻，莫利斯区分了“臣属之吻”（subordinate kiss）、“敬畏之吻”（reverent kiss）、“友谊之吻”（friendly kiss）和“性爱之吻”（sexual kiss）。<br>[102]在现代都市社群里，我们觉得太拥挤。过分拥挤在我们身上产生了两种完全矛盾的后果。一方面，它压迫我们，使我们感到紧张，缺乏安全感；另一方面，它使我们削减亲密接触，尽管亲密接触有助于我们减除压力和紧张。<br>[125]如果一位男人（或女人）看到车祸受害者，伤者孤立无助的情况发出婴儿般的信号，他很难不去施救。未经训练的人很难停下来理性地评估受害者的伤势，然后才知道如何急救。相反，他会伸手、触摸或抬起伤者，这是他抚慰伤者的动作；他根本没有想到，这可能会给伤者造成进一步的伤害。袖手旁观、冷静考虑最佳步骤，那会使他很痛苦。安抚的身体接触动作是无法抗拒的冲动，但我们不得不面对这样一个事实：有时这种急救的动作会使受害者死亡。<br>[132]<code>亲吻</code> 人体可以轻吻而不带性含义的部位有四处：吻面颊，表示友好平等；吻手背，表示尊敬；吻膝头，表示谦卑顺从；吻脚，表示卑贱。用嘴唇亲吻的动作是相同的，但亲吻的部位越低，亲吻者的地位就越低。尽管这些礼节铺张而讲究，但它们实际上和动物缓和气氛、防止攻击的典型动作是非常接近的。<br>[136]<code>握手</code><br>男人之间的“约定式握手”产生，表示“一言为定”；男性对女性的吻手礼同时产生，表示“和您见面不胜荣幸”。<br>对社交场合的仔细观察显示，握手人靠仔细观察线索来解决谁先伸手的问题。他们搜寻对方最细小的意向动作信号，一看见对方的手臂轻轻一动时，自己就急忙伸手，以造成同时伸手的印象。<br>男性和男性的握手礼常见得多，男性和女性、女性和女性的握手却不那么常见。我的观察结果是，2/3的握手礼是在男性之间进行的；在其余1/3的握手礼中，异性的握手是两位女性握手的三倍。这些数字符合握手礼的历史；因为男性继承了“约定式握手”，然后又赋予它问候的功能，使男性之间的握手有了双重价值。女性和男性的握手礼继承的是吻手礼，<strong>但女性并未在商务活动中获得平等的角色，所以她们在“约定式握手”中处在弱者的地位。</strong><br>恋人绝不会握手，握手无疑是最缺乏爱意的身体接触形式。握手的源头不是温情的拥抱，而是男性的约定式行为，所以它能避免引起性联想的种种问题。<br>[140]身体亲密时我们感情上不可能不“亲密”。在繁忙的现代生活中，我们抑制这样的亲密关系，即使需要也加以抑制。我们的关系太多、太模糊、太复杂，而且常常太不真诚，所以我们不能冒险去形成那种原生性身体亲密的纽带。……如果在没有性行为的情况下，我们发生了进一步的亲密接触，结果又怎么样呢？如果这样，当断即断的决策时刻来临时，我们就会看到，自己的决心软化了，竞争力衰退了。<br>[141]社会编织了自己的紧身衣，我们生活其中的熙熙攘攘的动物园并不是公开亲热的理想场所。这个世界因人口众多而受到污染；我们本该伸手表示友好，可是我们不小心就会碰撞到陌生人；我们本该拥抱和说笑，可是我们却迎头相撞、骂骂咧咧。到处都是陌生人，所以我们就畏缩而不与人接触了。<strong>我们似乎别无选择，唯一的补偿是更倚重私下的亲密行为，但我们经常连这一点也难以做到。我们在公共场所的约束似乎影响着我们和家人的亲密接触。</strong></p>
+<h2 id="第五章-特殊亲密行为"><a href="#第五章-特殊亲密行为" class="headerlink" title="第五章 特殊亲密行为"></a>第五章 特殊亲密行为</h2><p>该章讲述专业人士给人提供的身体接触。专业人士是专门的“触摸者”，他们获得特许，成了“有执照的触摸人”。作者介绍的触摸者有医生、护士、各种各样的半医务人员、按摩师、体操教练、健身教练、舞蹈师、理发师、缝纫师、修甲师、美容师、化妆师、裁缝、擦鞋匠和鞋店售货员等。<br>[145]都市生活的忙乱造成紧张，紧张造成焦虑和不安全感。亲密行为安抚焦虑和不安全感；于是就出现矛盾，我们越是被迫拉开距离，越是需要身体接触。<br>[164]热情的敌人胜过冷漠的朋友；它值得我们从亲密接触的角度去进行研究。看来，只要有充分的个性基础，任何形式的身体接触即使暴力的接触都可以使两位对手建立依恋的纽带。<br>[171]无论发生什么情况，我们总是可以依靠替代身体接触亲密行为的替代手段，即言语的亲密安抚。我们可以不拥抱，但可以说一些互相安抚的话。我们可以微笑并谈谈天气，就情感交流而言，这样的空谈是可怜的替代手段，但它总要胜过完全的情感孤独吧。</p>
+<h2 id="第六章-替代性亲密行为"><a href="#第六章-替代性亲密行为" class="headerlink" title="第六章 替代性亲密行为"></a>第六章 替代性亲密行为</h2><p>该章讲人与宠物的亲密接触。人们不仅将宠物当作朋友与伙伴，甚至当作自己的“孩子”；还有人有“宠物癖”（petishism）。莫利斯介绍并分析了围绕宠物和实验动物的尖锐意见分歧。几百年来，动物试验都引起激烈的争论，当代极端的动物保护主义者甚至冲击或捣毁动物实验室，“解放”动物。为了解释为何有人反对动物实验，莫利斯用三种人与动物的关系予以说明。<br>农夫与家畜的关系分为两段：饲养-屠宰；<br>家庭主妇投毒灭鼠的行为也分为两段：使其痛苦-致其死亡；<br>科学家与实验动物的关系却是三段：悉心照料-使其痛苦-致其死亡。<br>科学家与实验动物的关系是忠诚和背叛的关系：“突然在没有收到预警也没有刺激主人的情况下，那有爱心的主人却突然翻脸，不顾它忠心耿耿的伺候，竟然为了自己的私利而杀死它。这就是引起了那么多麻烦和争论的背信弃义的富有寓意的故事。”</p>
 
                 <hr>
                 
                 <!-- 多说 Share start -->
                 <div class="ds-share"
                      style="text-align: right"
-                     data-thread-key="2016/12/05/build-a-blog/"
-                     data-title="moliu&#39;s Blog 建站小记"
-                     data-url="http://moliusmile.github.io/2016/12/05/build-a-blog/"
+                     data-thread-key="2017/06/23/Intimate-Behaviour/"
+                     data-title="《亲密行为》 [英]德斯蒙德·莫利斯"
+                     data-url="http://moliusmile.github.io/2017/06/23/Intimate-Behaviour/"
                      data-images=""
-                     data-content="念念不忘 必有行动搭建自己专属blog的想法由来已久，萌发于半年前见到知乎大神Aljun的Bl... | moliu&#39;s blog ">
+                     data-content="第一章 亲密行为的根源作者反复强调，婴幼期和童年期父母的养育方式对人生的亲密行为产生决定性的影... | moliu&#39;s blog ">
                     <div class="ds-share-inline">
                         <ul class="ds-share-icons-16">
                             <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -260,15 +226,10 @@
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/12/06/Hexo-note/" data-toggle="tooltip" data-placement="top"
-                           title="Blog写作常用指令">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2016/12/05/Two-Questions/" data-toggle="tooltip" data-placement="top"
-                           title="科学的方法 公正的态度 果断的决心">Next Post &rarr;</a>
+                        <a href="/2017/05/05/Hear-the-Wind-Sing/" data-toggle="tooltip" data-placement="top"
+                           title="《且听风吟》 村上春树">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -277,9 +238,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                         data-thread-key="2016/12/05/build-a-blog/"
-                         data-title="moliu&#39;s Blog 建站小记"
-                         data-url="http://moliusmile.github.io/2016/12/05/build-a-blog/">
+                         data-thread-key="2017/06/23/Intimate-Behaviour/"
+                         data-title="《亲密行为》 [英]德斯蒙德·莫利斯"
+                         data-url="http://moliusmile.github.io/2017/06/23/Intimate-Behaviour/">
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -291,7 +252,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#念念不忘-必有行动"><span class="toc-text">念念不忘 必有行动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月1日"><span class="toc-text">12月1日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月2日"><span class="toc-text">12月2日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月3日"><span class="toc-text">12月3日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月4日"><span class="toc-text">12月4日</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、淘宝npm源的使用"><span class="toc-text">一、淘宝npm源的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、系统环境的配置"><span class="toc-text">二、系统环境的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、修改config-yml中deploy之后"><span class="toc-text">三、修改config.yml中deploy之后</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月5日"><span class="toc-text">12月5日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#功能总结和to-do-list"><span class="toc-text">功能总结和to do list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#鸣谢"><span class="toc-text">鸣谢</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章-亲密行为的根源"><span class="toc-text">第一章 亲密行为的根源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章-两性亲密行为的诱因"><span class="toc-text">第二章 两性亲密行为的诱因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三章-两性亲密行为"><span class="toc-text">第三章 两性亲密行为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四章-社交亲密行为"><span class="toc-text">第四章 社交亲密行为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第五章-特殊亲密行为"><span class="toc-text">第五章 特殊亲密行为</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第六章-替代性亲密行为"><span class="toc-text">第六章 替代性亲密行为</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -313,11 +274,8 @@
                     </h5>
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#hexo"
-                           title="hexo">hexo</a>
-                        
-                        <a class="tag" href="/tags/#github"
-                           title="github">github</a>
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
                         
                     </div>
                 </section>

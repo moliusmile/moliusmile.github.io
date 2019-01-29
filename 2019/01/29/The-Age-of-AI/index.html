@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shuxin Yang&#39;s blog | Coding and Running Girl">
+    <meta name="keyword" content="null">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://oho5zsu61.bkt.clouddn.com/favicon_love.png">
+    <link rel="alternate" type="application/atom+xml" title="Shuxin Yang" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        《智能时代-大数据与智能革命重新定义未来》 吴军｜Shuxin Yang&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://moliusmile.github.io/2019/01/29/The-Age-of-AI/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_starry.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Shuxin Yang
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/aboutme/AboutMe.html">ABOUT ME</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">TAGS</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/works/">MY WORKS</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>《智能时代-大数据与智能革命重新定义未来》 吴军</h1>
+                    
+                    <span class="meta">
+                         author Shuxin Yang
+                        <span>
+                         time 2019-01-29
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#data-science"
+                           title="data-science">data-science</a>
+                        
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            《智能时代-大数据与智能革命重新定义未来》 吴军
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <blockquote>
+<p>很多时候，落后与先进的差距，不是购买一些机器或者引进一些技术就能够弥补的，落后最可怕的地方是思维方式的落后。</p>
+</blockquote>
+<h1 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h1><p><img src="http://shuxinyang.com/2019/01/29/The-Age-of-AI//cover.jpg" alt=""></p>
+<ul>
+<li>作者： 吴军</li>
+<li>出版社： 中信出版社</li>
+<li>出版时间： 2016-08</li>
+</ul>
+<h1 id="第一章-数据–人类建造文明的基石"><a href="#第一章-数据–人类建造文明的基石" class="headerlink" title="第一章 数据–人类建造文明的基石"></a>第一章 数据–人类建造文明的基石</h1><ul>
+<li>第一次工业革命：以蒸汽机的发明为标志以机械化为特征</li>
+<li>第二次工业革命：以电的发明为标志以电气化为特征</li>
+<li>第三次工业革命：以大数据应用为标志之一和以智能化为特征</li>
+</ul>
+<p>【现象、数据、信息和知识】<br>比如通过测量星球的位置和对应的时间，就得到数据；通过这些数据得到星球运动的轨迹，就是信息；通过信息总结出开普勒三定律，就是知识。</p>
+<p>【数学模型】要建立数学模型就要解决两个问题，首先是采用什么样的模型，其次是模型的参数是多少。</p>
+<p>【数据驱动】虽然数据驱动方法在数据量不足时找到的一组模型可能和真实的模型存在一定的偏差，但是在误差允许的范围内，但从结果上看和精确的模型是等效的。</p>
+<h1 id="第二章-大数据和机器智能"><a href="#第二章-大数据和机器智能" class="headerlink" title="第二章 大数据和机器智能"></a>第二章 大数据和机器智能</h1><p>【提出问题】虽然达特茅斯会议本身没有产生什么了不起的思想，10个最聪明的大脑一个暑假的思考甚至比不上今天一位一流的博士毕业生，但是它的意义超过10个图灵奖，因为它<strong>提出了问题</strong>。</p>
+<p>【机器智能】机器智能最重要的是能够解决人脑所能解决的问题，而不在于是否需要采用和人一样的方法。</p>
+<p>【大数据】仔细推敲英语中big data这种说法，我们不得不承认这个提法非常准确，它最重要的是传递了一种信息–大数据是一种思维方式的改变。现在的数据量相比过去大了很多，量变带来了质变，思维方式、做事情的方法就应该和以往有所不同。</p>
+<p>【自动问答】</p>
+<ul>
+<li>在计算机自动问答研究领域，科学家们已经研究了多年。通常我们把问题归结为7类：“是什么”（What）、“什么时候”（When）、“什么地点”（Where）、“哪一个”（Which）、“是谁”（Who）、“为什么”（Why）和“怎么做“（How）。</li>
+<li>在这7类问题中，容易回答的是询问事实，包括“是什么”（What）、“什么时候”（When）、“什么地点”（Where）、“哪一个”（Which）、“是谁”（Who），比如：“中国的国家主席是谁？”难回答的是询问原因的“为什么”（Why）问题，以及询问过程的“怎么做”（How）问题。</li>
+<li>“2012年，我离开腾讯会到Google，我的上级领导辛格博士和尤斯塔斯对我讲，不指望我做什么马上见成效的产品，希望我解决一些和机器智能有关的根本性问题，<strong>前提是这些问题解决之后，微软要花5年时间才能追赶上</strong>。”</li>
+</ul>
+<h1 id="第三章-思维的革命"><a href="#第三章-思维的革命" class="headerlink" title="第三章 思维的革命"></a>第三章 思维的革命</h1><p>【托勒密】和欧几里得一样，托勒密不仅是一个构建大系统的人，也是一个善于总结方法论的人。托勒密的方法论可以概括为“通过观察获得数学模型的雏形，然后利用数据来细化模型”。</p>
+<p>【经济学】把经济学家的方法论做一个简单的概括，其核心思想有如下两点：首先，需要有一个简单的元模型，这个模型可能是假设出来的，然后再用这个元模型构建复杂的模型；其次，整个模型要和历史数据相吻合。</p>
+<p>【方法论】思维方式和方法远不如方法论对科学的发展至关重要。</p>
+<p>【牛顿】</p>
+<ul>
+<li>牛顿通过自己的伟大成就宣告了科学时代的来临，作为思想家，他让人们相信世界万物的运动规律是可以被认识的。他告诉人们：世界万物是运动的，而且这些运动遵循着确定性的规律，这些规律又是可以被认识的。</li>
+<li>牛顿作为思想家的贡献还在于他指出了任何正确的理论从形式上讲都是简单的，同时又有非常好的通用性，这与东方这些中的大道至简思想不谋而合</li>
+</ul>
+<p>【不确定性】</p>
+<ul>
+<li>机械思维的局限性更多来源于它否认不确定性和不可知性。</li>
+<li>世界的不确定性来自两方面，首先是当我们对这个世界的方方面面了解得越来越细致之后，会发现影响世界的变量其实非常多，已经无法通过简单的办法或者公式算出结果，因此我们宁愿采用一些针对随机事件的方法来处理它们，人为地把它们归为不确定的一类。</li>
+<li>不确定性的第二个因素来自客观世界本身，它是宇宙的一个特性。</li>
+</ul>
+<p>【信息论】</p>
+<ul>
+<li>在概率论的基础上，香农博士建立起一套完整的理论，将世界的不确定性和信息联系了起来，这就是“信息论”。</li>
+<li>与机械思维是建立在一种确定性的基础上所截然不同的是，信息论完全是建立在不确定性基础上，而要想消除这种不确定性，就要引入信息。至于要引入多少信息，则要看系统中的不确定性有多大。</li>
+<li>香农第一定律：也称为香农信源编码定律。</li>
+<li>香农第二定律：信息的传播速率不可能超过信道的容量。</li>
+<li>最大熵原理：当我们要对未知的事件寻找一个概率模型时，这个模型应当满足我们所有已经看到的数据，但是对未知的情况不要做任何主观假设。</li>
+<li>大数据的科学基础是信息论，它的本质就是利用信息消除不确定性。</li>
+</ul>
+<p>【思维】很多时候，落后与先进的差距，不是购买一些机器或者引进一些技术就能够弥补的，落后最可怕的地方是思维方式的落后。</p>
+<h1 id="第四章-大数据与商业"><a href="#第四章-大数据与商业" class="headerlink" title="第四章 大数据与商业"></a>第四章 大数据与商业</h1><p>对于查处毒品种植的案例，我们看到了大数据思维的三个亮点：</p>
+<ol>
+<li>第一是用统计规律和个案对比，做到精准定位。</li>
+<li>第二是社会其实已经默认了在取证时利用相关性代替直接证据，即我们在前面所说的强相关性代替因果关系。</li>
+<li>第三是执法的成本，或者更广泛地讲，运营的成本，在大数据时代会大幅下降。</li>
+</ol>
+<p>酒吧数据分析的三个方面：</p>
+<ol>
+<li>分析每一家酒吧过去经营情况的统计数据，这有助于酒吧的主人全面了解经营情况。</li>
+<li>为每一家酒吧的异常情况提供预警。</li>
+<li>综合各家酒吧数据的收集和分析，戴维会为酒吧老板们提供这个行业宏观的数据作为参考。</li>
+</ol>
+<p>【通用公式】原有产业 + 新技术 = 新产业</p>
+<ul>
+<li>现有产业 + 蒸汽机 = 新产业</li>
+<li>现有产业 + 电 = 新产业</li>
+<li>现有产业 + 摩尔定律 = 新产业</li>
+<li>现有产业 + 大数据 = 新产业</li>
+<li>现有产业 + 机器智能 = 新产业</li>
+</ul>
+<p>【商业模式变更】在信息时代，商业模式的变化更加明显，它突出地表现在两方面，一是产业链从一种产品扩展到整个IT行业，二是服务业的重要性突显出来。</p>
+<p>【产品跟踪技术】从宏观的角度看，商家可以了解到它的商品是通过什么渠道卖给了具体的消费者，从而优化它的销售网络；从微观的角度看，它可以了解每一位顾客的生活，知道接下来每一个人需要什么。</p>
+<h1 id="第五章-大数据和智能革命的技术挑战"><a href="#第五章-大数据和智能革命的技术挑战" class="headerlink" title="第五章 大数据和智能革命的技术挑战"></a>第五章 大数据和智能革命的技术挑战</h1><p>【数据产生】电脑本身；传感器；将那些过去已经存在的、以非数字化形式存储的信息数字化。</p>
+<p>【信息存储】</p>
+<ul>
+<li>磁带 -&gt; 硬盘 -&gt; 半导体的固态存储器（Solid State Drives, 简称SSD）</li>
+<li>目前节约存储设备的技术体现在两方面，第一类技术是存储同样的信息占用的空间小。第二类技术涉及数据安全，这里指数据不丢失、不损坏，而不是指防止数据被盗。</li>
+</ul>
+<p>【数据收集】在大数据时代，在收集数据时常常没有这样预先设定的目标，而是先把所有能够收集到的数据收集起来，经过分析后，能够得到什么结论就是什么结论。</p>
+<p>【数据挖掘】</p>
+<ul>
+<li>机器学习的过程无一例外是一个不断迭代、不断进步的过程，用机器学习的专业术语来说就是“期望值最大化”（Expectation Maximization）的过程：只要事先定出一个学习的目标，这些算法就会不断地优化模型，让它越来越接近真实的情况。</li>
+<li>通常，由大量的数据、较少迭代训练出的“较粗糙”的模型，要比用少量的数据、深度的学习精耕细作得到的模型效果更好。</li>
+</ul>
+<p>【保护隐私】</p>
+<ul>
+<li>一类保护隐私的技术是从收集信息的一开始就对数据进行一些预处理，预处理后的数据保留了原来的特性，使得数据科学家和数据工程师能够处理数据，却“读不懂”数据的内容。</li>
+<li>另一类保护隐私的技术是双向监视。正如制约权力最好的办法是使用权利，解决一种技术带来的漏洞最好的办法是采用另一种技术，那么保护隐私最好的办法或许是让侵犯隐私的人必须以自己的隐私来做交换。</li>
+</ul>
+<h1 id="第六章-未来智能化产业"><a href="#第六章-未来智能化产业" class="headerlink" title="第六章 未来智能化产业"></a>第六章 未来智能化产业</h1><p>硅谷地区有两种人最不缺，即风险投资人和工程师，前者善于看到其他人还没有发现的投资潜力，然后把它经营成值钱的实业；后者善于利用技术创造奇迹。</p>
+<p>【医疗】</p>
+<ul>
+<li>医疗保健上的瓶颈包括：一是医疗的成本越来越高，二是医疗资源不平衡。</li>
+<li>从医疗本身讲，医疗成本高的前两个重要原因是药品的研制周期太长、费用太高，以及医务人员培养的成本太高。</li>
+<li>相比医生，计算机在诊断和做手术等方面有三大优势：首先，它们漏判（或者失误）的可能性非常低，也就是说它们能够发现一些医生们忽略的情况；其次，它们的准确率很高，而且随着数据量（病例）的增加提高得非常快；最后，也是人所不具备的，这些智能程序的稳定性非常好，它们不会像人那样受情绪的影响。而这些程序的成本，通常不到人工的百分之一。</li>
+<li>医治癌症的难点，一是不同人即使得了同一种癌，其癌细胞病变的基因未必相同，因此一种抗癌药可能对某些病人管用，但是对其他病人并不管用。而是也是最根本的难点在于癌细胞本身的复制也会出错。</li>
+<li>在未来，可能一种疾病会有不同的药品医治，而不同的人会有不同的特效药。</li>
+</ul>
+<p>【律师】大数据对司法领域的影响：</p>
+<ol>
+<li>诉讼的一方会通过数据之间的强相关性寻找证据，而司法领域也认可这一类证据。</li>
+<li>机器智能会逐渐取代律师做一些案例分析工作，这使得诉讼的成本有可能大幅度下降。</li>
+</ol>
+<p>【编辑】IBM公司发布了去年四季度的财报，计算机会先“读”一遍该公司财报的内容，然后提取出主要的信息，比如该季度的收入、利润，与华尔街预期的对比，人员情况，市场份额，等等；然后计算机可以写一篇关于IBM业绩的新闻稿，当然最后在发表前多少还是经过了人工的一些润色处理。</p>
+<h1 id="第七章-智能革命和未来社会"><a href="#第七章-智能革命和未来社会" class="headerlink" title="第七章 智能革命和未来社会"></a>第七章 智能革命和未来社会</h1><p>【医疗】</p>
+<p>一方面由于每一个人都积累了非常完整的与自己健康状况有关的数据，医院、医生甚至患者本人对自己的病情都会有比较清晰的了解。另一方面由于有了比较完备的医疗从业者的数据，智能的就诊指导系统会根据患者的情况和医生的情况帮助他们选择合适的医生。这样患者在小病时不需要折腾自己，真遇到大病时更容易地找到合适的医生。 <code>类似于智能排课</code></p>
+<p>【技术革命】</p>
+<p>历史上影响力可以和正在进行的智能革命相比的，只有18世纪末始于英国的工业革命、19世纪下半叶始于美国和德国的第二次工业革命、“二战”后以摩尔定律为标准的信息革命，一共是三次。这三次技术革命都有一个共同的特点，<strong>那就是它们对当时的社会产生了巨大的冲击，都需要经过大约半个世纪甚至更长的时间才能消化掉。</strong></p>
+<p>【民众幸福】</p>
+<ul>
+<li>当然，财富是社会发展和个人生活质量的一个客观标准，但绝非唯一的衡量标准。幸福指数常常被认为是生活质量的一个主观衡量标准。</li>
+<li>一百年前，各国政府认识不到关心这些被产业淘汰的从业人员的重要性，因此让社会很动荡。如今，各国意识到社会稳定很重要，因此即使很多人并不创造价值，也只好“养着”。</li>
+<li>针对2010年的占领华尔街运动以及2015年年底以来法国、德国和比利时外来移民不断滋事的状况，大家在思考一个根本性的问题：这些不满情绪的根源在哪里？这不能简单地归结为贫富悬殊，或者宗教纷争。其根源在于，很多人被社会进步抛弃了。随着技术革命的发展，并非每一个人的发展机会都是越来越多的，反而可能是越来越少。</li>
+</ul>
+<p>【利用新技术】</p>
+<ul>
+<li>回顾从工业革命开始的前三次重大技术革命，首先受益的是和那些产业相关的人、善于利用新技术的人。</li>
+<li>在每一个重大的技术革命开始的时候，真正勇敢地投身到技术革命大潮中的人毕竟少数，受益者更少，大部分则会犹豫和观望。在智能革命到来之际，每一个人也有两个选择，要么加入到这一次浪潮中，要么观望徘徊，最后被淘汰。当然，大多数人的观望、犹豫和徘徊，给了2%的人以机会，使得愿意吃螃蟹的人在奋斗的道路上少了很多竞争对手。正是因为知道自己不加入进来就会被淘汰，马斯克和盖茨一方面对机器智能的发展非常担心，另一方面却选择加入到机器智能的大潮中。</li>
+</ul>
+
+                <hr>
+                
+                <!-- 多说 Share start -->
+                <div class="ds-share"
+                     style="text-align: right"
+                     data-thread-key="2019/01/29/The-Age-of-AI/"
+                     data-title="《智能时代-大数据与智能革命重新定义未来》 吴军"
+                     data-url="http://moliusmile.github.io/2019/01/29/The-Age-of-AI/"
+                     data-images=""
+                     data-content="
+很多时候，落后与先进的差距，不是购买一些机器或者引进一些技术就能够弥补的，落后最可怕的地方是... | Shuxin Yang&#39;s blog ">
+                    <div class="ds-share-inline">
+                        <ul class="ds-share-icons-16">
+                            <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                            <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                            <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                            <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                        </ul>
+                        <div class="ds-share-icons-more">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2018/08/20/Sapiens/" data-toggle="tooltip" data-placement="top"
+                           title="《人类简史》 [以色列] 尤瓦尔·赫拉利">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                         data-thread-key="2019/01/29/The-Age-of-AI/"
+                         data-title="《智能时代-大数据与智能革命重新定义未来》 吴军"
+                         data-url="http://moliusmile.github.io/2019/01/29/The-Age-of-AI/">
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#版本信息"><span class="toc-text">版本信息</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章-数据–人类建造文明的基石"><span class="toc-text">第一章 数据–人类建造文明的基石</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-大数据和机器智能"><span class="toc-text">第二章 大数据和机器智能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章-思维的革命"><span class="toc-text">第三章 思维的革命</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第四章-大数据与商业"><span class="toc-text">第四章 大数据与商业</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五章-大数据和智能革命的技术挑战"><span class="toc-text">第五章 大数据和智能革命的技术挑战</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第六章-未来智能化产业"><span class="toc-text">第六章 未来智能化产业</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第七章-智能革命和未来社会"><span class="toc-text">第七章 智能革命和未来社会</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#data-science"
+                           title="data-science">data-science</a>
+                        
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://aljun.me">Aljun</a></li>
+                        
+                        <li><a href="https://dongleizhang.github.io/">Donglei Zhang</a></li>
+                        
+                        <li><a href="http://www.choosefoto.com">CHOOSE FOTO</a></li>
+                        
+                        <li><a href="http://acge.ga/">A-C-G-E</a></li>
+                        
+                        <li><a href="http://weibo.com/icsszju?is_hot=1">Hang Ye</a></li>
+                        
+                        <li><a href="https://ferrinfriends.github.io/">Ferri</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'moliusmile';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/mo-liu-38-73">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/shuxin-yang-680304b5">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Shuxin Yang 2019
+                    <br>
+                    &hearts; &hearts; <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times </span> &hearts; &hearts;
+					<br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://moliusmile.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-88475808-1';
+    var _gaDomain = 'shuxinyang.com';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    var _baId = 'fa02b72eee073d39f5dca3d531c29928';
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://shuxinyang.com/aboutme/Denise2.jpg">
+</body>
+
+</html>

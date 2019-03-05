@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shuxin Yang&#39;s blog | Coding and Running Girl">
+    <meta name="keyword" content="null">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://oho5zsu61.bkt.clouddn.com/favicon_love.png">
+    <link rel="alternate" type="application/atom+xml" title="Shuxin Yang" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        《梁宁·产品思维30讲 -- 怎样从第一个用户到第一桶金》｜Shuxin Yang&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://moliusmile.github.io/2019/03/05/Think-Like-a-PM/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_starry.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Shuxin Yang
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/aboutme/AboutMe.html">ABOUT ME</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">TAGS</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/works/">MY WORKS</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>《梁宁·产品思维30讲 -- 怎样从第一个用户到第一桶金》</h1>
+                    
+                    <span class="meta">
+                         author Shuxin Yang
+                        <span>
+                         time 2019-03-05
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#note"
+                           title="note">note</a>
+                        
+                        <a class="tag" href="/tags/#pm"
+                           title="pm">pm</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            《梁宁·产品思维30讲 -- 怎样从第一个用户到第一桶金》
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h2 id="课前必读"><a href="#课前必读" class="headerlink" title="课前必读"></a>课前必读</h2><h3 id="01-发刊词-产品能力是每个人的底层能力"><a href="#01-发刊词-产品能力是每个人的底层能力" class="headerlink" title="01 发刊词 | 产品能力是每个人的底层能力"></a>01 发刊词 | 产品能力是每个人的底层能力</h3><p>在今天这个时代，如果让我给一个建议，那就是培养自己的产品能力。</p>
+<p>产品能力就是训练一个人：判断信息，抓住要点，整合有限的资源，把自己的价值打包成一个产品向世界交付，并且获得回报。</p>
+<p>因为从一个普通人，到成为一个产品人的过程，其实就是一个人学习建立认知框架的过程。</p>
+<p>做一个产品人，我们只认一条 <strong>“用户驱动”</strong></p>
+<p>产品思维，到底讲什么内容</p>
+<p>我会用5大模块一共25讲，教你怎么看到用户、倾听用户、判断用户，怎么能够与用户建立连接，并且在用户的交互反馈中去迭代和优化。</p>
+<ol>
+<li>教你怎么去观察，怎么去判断。</li>
+<li>如何建立一种系统能力，以此去向用户交付一种确定性。</li>
+<li>如何建立交互能力，接着在不断的连接与迭代中，深化你和用户的关系。</li>
+</ol>
+<h3 id="02-案例：-用户体验与结婚教练"><a href="#02-案例：-用户体验与结婚教练" class="headerlink" title="02 案例： 用户体验与结婚教练"></a>02 案例： 用户体验与结婚教练</h3><p>在开始长期关系之前，如何有框架地去观察一个人，进行是否适配的判断，是更关键的。</p>
+<p>如何用一个产品经理看产品的专业化方法，去指导一个女孩儿去判断她的相亲对象。从外到内的五个层次：</p>
+<ul>
+<li>第一层 —— 感知层  浅层</li>
+<li>第二层 —— 角色框架层 浅层</li>
+<li>第三层 —— 资源结构层  深层（它可能会包括了一个人的财富资源、人脉资源、精神资源，每个人其实都是不一样的。）</li>
+<li>第四层 —— 人的能力圈</li>
+<li>第五层 —— 一个人的内核，就是他对自己存在感的定义</li>
+</ul>
+<p>如果你明确知道自己想成为一个什么样的存在，你就会不断地改变自己的能力圈，改变自己的资源，然后甚至改变自己外在的样子。</p>
+<p>如何用产品经理看产品的认知框架来看一个人：</p>
+<ol>
+<li>如果你追求的是深度关系和长期关系，那你需要看到的就绝不仅仅是表面上已经呈现出来的结果。</li>
+<li>没有任何一个人是完美适配另一个人的成熟产品，你需要看到的是一个人能够持续让自己变化的内在的动力。</li>
+<li>然后在漫长的不确定的未来里，明确你们两个人是不是能够一起拥抱不确定，拥抱变化，在变化中变得成熟，彼此适配。</li>
+<li>其实这个才是更关键的东西。</li>
+</ol>
+<h2 id="01-同理心（5讲）"><a href="#01-同理心（5讲）" class="headerlink" title="01 同理心（5讲）"></a>01 同理心（5讲）</h2><h3 id="03-同理心训练：-怎样理解愉悦与不爽"><a href="#03-同理心训练：-怎样理解愉悦与不爽" class="headerlink" title="03 同理心训练： 怎样理解愉悦与不爽"></a>03 同理心训练： 怎样理解愉悦与不爽</h3><ul>
+<li>需求被<strong>满足</strong>，这种感觉叫<strong>愉悦</strong>。</li>
+<li>一种绷了很久的需求，突然间被满足了，这种感觉叫<strong>“爽”</strong>。</li>
+<li>满足就愉悦，不满足就<strong>不爽</strong>。</li>
+</ul>
+<p>拉动你玩游戏的，就是微小的愉悦感，和绷了很久的需求，突然被满足的爽感。加在一起，这种确定性的满足就会成瘾。</p>
+<p>你会对某些东西感到愉悦，这个东西持续给你满足感，你可以一直花时间在这里，不厌其烦。时间久了，其实你就会与众不同。天才的1万小时理论，多半人，是在深入体验中，找到了满足，找到了愉悦感。持续的满足和愉悦，才能撑一个人持续投入一万小时。</p>
+<p>三个很普通的词的深意：“满足” “愉悦” “不爽”。</p>
+<ol>
+<li>你可以量度，一个产品到位不到位；</li>
+<li>你可以量度，你和一个人的关系；</li>
+<li>你还可以看到，自己的天分和命运。</li>
+</ol>
+<h3 id="04-同理心训练：-怎样理解愤怒与恐惧"><a href="#04-同理心训练：-怎样理解愤怒与恐惧" class="headerlink" title="04 同理心训练： 怎样理解愤怒与恐惧"></a>04 同理心训练： 怎样理解愤怒与恐惧</h3><p>愤怒和恐惧是同生的一对感觉，都是来自于被侵犯。</p>
+<ul>
+<li>愤怒，就是感觉到自己的边界被侵犯。</li>
+<li>本质上，愤怒其实是一种恐惧。</li>
+<li>焦虑来自对恐惧的想象。因为是想象，所以无从逃避，所以是一种持续的恐惧，就会内化为焦虑。</li>
+<li>羞耻感也是一种恐惧，它来自对社会评论的恐惧。</li>
+</ul>
+<ol>
+<li>恐惧是边界</li>
+<li>恐惧是动力： 面对一个年轻人，如果他在工作中，既没有愉悦，也没有恐惧。你基本上可以判断，他在这件事上，不会有什么成就。</li>
+<li>恐惧是痛点： 要么做一个让人愉悦到爆爽的产品，要么做一个可以帮人抵御恐惧的产品。每个人的痛点都是他的恐惧，恐惧是痛点。</li>
+</ol>
+<h3 id="05-同理心训练：-产品要顺应用户潜意识"><a href="#05-同理心训练：-产品要顺应用户潜意识" class="headerlink" title="05 同理心训练： 产品要顺应用户潜意识"></a>05 同理心训练： 产品要顺应用户潜意识</h3><ul>
+<li>产品是被动的艺术。</li>
+<li>因为产品不能像真实的人那样教育用户、说服用户，只能静态地等待用户的选择。</li>
+<li>所以，要做顺应用户潜意识的产品，不要让用户思考，不要激发用户的防御心理。</li>
+</ul>
+<h3 id="06-认清人的本性，理解角色化生存"><a href="#06-认清人的本性，理解角色化生存" class="headerlink" title="06 认清人的本性，理解角色化生存"></a>06 认清人的本性，理解角色化生存</h3><ul>
+<li>我们被教育成了角色要求的样子，就好像寄居蟹一样，顶着壳生存。</li>
+<li>做产品要放弃对用户的角色化预期，放弃设想用户“应该”怎么做，要去发现真实的用户。</li>
+</ul>
+<h3 id="07-自我与自律，哪一种更贴近产品精神"><a href="#07-自我与自律，哪一种更贴近产品精神" class="headerlink" title="07 自我与自律，哪一种更贴近产品精神"></a>07 自我与自律，哪一种更贴近产品精神</h3><ul>
+<li>靠愉悦驱动的人，往往自我。</li>
+<li>靠恐惧驱动的人，往往自律。</li>
+<li>这两者，都会诞生非常优秀、非常成功的人。</li>
+</ul>
+<h2 id="02-机会判断（5讲）"><a href="#02-机会判断（5讲）" class="headerlink" title="02 机会判断（5讲）"></a>02 机会判断（5讲）</h2><h3 id="08-机会判断：-点线面体的战略选择【重点】"><a href="#08-机会判断：-点线面体的战略选择【重点】" class="headerlink" title="08 机会判断： 点线面体的战略选择【重点】"></a>08 机会判断： 点线面体的战略选择【重点】</h3><ol>
+<li>如果要成为中产，至少要收货一次线性周期的收益。</li>
+<li>如果要成为富人，就要借助经济体的崛起。</li>
+<li>如果一辈子都只在一个点上耕耘，即使再努力，也只是“穷人勤奋的人生”。</li>
+</ol>
+<ul>
+<li>当你想做一个产品的时候，入手只能是一个点。</li>
+<li>但你要想清楚，它附着在哪个面上？这个面在和谁竞争，它能如何展开？这个面，是在哪个经济体上？这个经济体，是在快速崛起，还是沉沦？</li>
+<li>悲催的人生，就是在一个常态的面上，做一个勤奋的点。</li>
+<li>更悲催的人生，就是在一个看上去常态的面上，做一个勤奋的点，你每天都在想着未来，但其实这个面正在下沉。</li>
+<li>最悲催的人生，就是在一个看上去常态的面上，做一个勤奋的点，其实这个面附着的经济体正在下沉。</li>
+<li>如果一个人一生只能收到点状努力的计时收益，从来没有享受过一次，线性周期的成果回报，这就叫穷人勤奋的一生。</li>
+</ul>
+<h3 id="09-机会判断：-怎样找到有势能的趋势【重点】"><a href="#09-机会判断：-怎样找到有势能的趋势【重点】" class="headerlink" title="09 机会判断： 怎样找到有势能的趋势【重点】"></a>09 机会判断： 怎样找到有势能的趋势【重点】</h3><ul>
+<li>求之于势，不责于人。      《孙子兵法·势篇》</li>
+<li>一个人要做成一件事情，其实本质上不是在于你多强，而是你要顺势而为，于万仞之上推千钧之石。     –雷军</li>
+<li><strong>人生的选择远比努力更重要。</strong>你的选择应该是一条“线”、一个“面”，甚至是一个“体”的收益。你个人的努力，只是在“点”、“线”、“面”、“体”的既定框架内，作为一个“点”的挣扎而已。</li>
+</ul>
+<p>在一个“点”上反复纠结，其实得不出本质的结论。 不如花时间，从这个“点”上跳出来，研究一下这个“点”下面的大框架——“线”、“面”、“体”。</p>
+<p>作为将军或管理者，不能抱怨士兵或员工不够勇敢，这叫“责于人”。“求之于势，不责于人”，是要自己去找有势能的“面”，而不能寄希望于员工的“点”。“求之于势，不责于人”，这才是CEO该干的事。 找到外部势能，为你的整个组织赋能。 </p>
+<h3 id="10-痛点、痒点、爽点都是产品机会"><a href="#10-痛点、痒点、爽点都是产品机会" class="headerlink" title="10 痛点、痒点、爽点都是产品机会"></a>10 痛点、痒点、爽点都是产品机会</h3><p>好产品的切入点有3种：</p>
+<ol>
+<li>痛点，要打中人的恐惧。</li>
+<li>爽点，用户有什么需求，你能够即时满足他。</li>
+<li>痒点，要满足用户想象中的自己。 </li>
+</ol>
+<h3 id="11-两套经典的用户画像"><a href="#11-两套经典的用户画像" class="headerlink" title="11 两套经典的用户画像"></a>11 两套经典的用户画像</h3><p>第一套画像：产品是你的草地，第一个用户是第一只羊，只有第一只羊能在草地上吃得满足，才能引入更多的羊。</p>
+<p>第二套画像：羊群中有不同的偏好，需求明确、对价格敏感的是大明羊；不知道买什么，闲逛的是笨笨羊；不想买东西，就想打发时间的是小闲羊。</p>
+<p>互联网的BAT就是服务这三类经典用户涨起来的。</p>
+<ul>
+<li>百度服务大明，你要什么说清楚，我帮你找；</li>
+<li>淘宝服务笨笨，没什么事你就上来逛吧，有层出不穷的东西给你看；</li>
+<li>腾讯服务小闲，闲着没事的时候，打开腾讯的任何一个产品打发时间。</li>
+</ul>
+<h3 id="12-设计产品时要包括产品的场景"><a href="#12-设计产品时要包括产品的场景" class="headerlink" title="12 设计产品时要包括产品的场景"></a>12 设计产品时要包括产品的场景</h3><p>只有能触发用户情绪的场景才是真正的流量入口。 互联网商业其实就是三个核心词：产品、流量、转化率，也就是产品的比拼、流量的争夺、转化率的优化，这就是互联网商业竞争的全部。</p>
+<p>你要规划一个产品，需要问自己七个问题：</p>
+<ul>
+<li>第一，我的产品解决了什么问题？是痛点、痒点，还是爽点？</li>
+<li>第二，我在为谁解决这个问题？他得到即刻满足了吗？这是用户画像的问题。</li>
+<li>第三，有多少人需要解决这个问题呢？这是市场规模的问题。</li>
+<li>第四，目前人们是怎么解决这个问题的呢？这是竞争分析的问题。</li>
+<li>第五，我的竞争方案为什么能够在市场竞争中胜出？你不要简单地看单点的竞争力，而是要看点线面体，谁给你赋能。</li>
+<li>第六，用户会在什么样的场景触发情绪？需要马上去解决问题，这是场景问题。</li>
+<li>第七，当用户遇到问题的时候，他会想到哪个名字呢？我在第四模块会讲。</li>
+</ul>
+<h2 id="03-系统能力（5讲）"><a href="#03-系统能力（5讲）" class="headerlink" title="03 系统能力（5讲）"></a>03 系统能力（5讲）</h2><h3 id="13-怎样用系统能力给人提供确定性"><a href="#13-怎样用系统能力给人提供确定性" class="headerlink" title="13 怎样用系统能力给人提供确定性"></a>13 怎样用系统能力给人提供确定性</h3><ul>
+<li>用户不是需要一台打孔机，而是墙上有一个洞。</li>
+<li>不要想着你要做一个产品改变世界，而是想想你能为用户提供什么样的服务。</li>
+</ul>
+<ol>
+<li>第一，你的产品在“点线面体”的什么位置？</li>
+<li>第二，你提供的是一个什么样的确定性？</li>
+<li>第三，为了保证确定性的稳定提供，你需要的系统能力都要包括哪些环节？你有足够的资本和能力来支撑所有的环节吗？</li>
+</ol>
+<h3 id="14-系统效率：-小米的效率革命"><a href="#14-系统效率：-小米的效率革命" class="headerlink" title="14 系统效率： 小米的效率革命"></a>14 系统效率： 小米的效率革命</h3><p>现在小米和当年的360有点像，都成为了搭建一个三级火箭的模式。<br>小米的三级火箭模式是：</p>
+<ul>
+<li>一级火箭： 小米手机，也是头部流量。我们都知道一级火箭是不挣钱的，所以小米手机的利润极其低。</li>
+<li>二级火箭： 小米手机拉动的立体化零售渠道。</li>
+<li>三级火箭： 未来MIUI、小米云等互联网业务，才真正支撑起小米的利润以及它的智能化未来。</li>
+</ul>
+<p>当vivo、OPPO在跟小米拼手机的时候，小米却在拼效率。 手机对于小米来讲只是一级火箭，它的智能化未来，才是真正的核心。</p>
+<h3 id="15-系统世界观：-微信、米聊、陌陌【重点】"><a href="#15-系统世界观：-微信、米聊、陌陌【重点】" class="headerlink" title="15 系统世界观： 微信、米聊、陌陌【重点】"></a>15 系统世界观： 微信、米聊、陌陌【重点】</h3><ul>
+<li>迭代就是小步快跑，把最内核的部分先放出来，不断优化、小范围试错。</li>
+<li>判断一个产品经理是否厉害，很重要的一条就是判断他设计的产品第一个版本有多简单、直接、切中要点，能不能直指人心。</li>
+<li>为什么很多产品经理要把产品的第一个版本设计得那么复杂？因为他们不自信。他们对“我只要做强哪个点，用户就必然买账”没把握，而希望在一些附加的功能点上，寻找心理依靠。</li>
+<li>迭代中，重要的是次序，前一个动作是后一个动作的预动作。</li>
+</ul>
+<p>系统能力让微信赢了米聊：微信的背后有数十万台服务器支撑微信的数据流量。这样的系统能力建设，对于腾讯这样的公司是天然的。</p>
+<p>微信的迭代其实有两个价值：</p>
+<ul>
+<li>对外部，可以快速得到用户的反馈，让用户反馈去驱动产品；</li>
+<li>对内部，建立了开发团队的节奏感和确定性，每周都有新版本。</li>
+</ul>
+<h3 id="16-系统迭代：微信红包的意外与刻意"><a href="#16-系统迭代：微信红包的意外与刻意" class="headerlink" title="16 系统迭代：微信红包的意外与刻意"></a>16 系统迭代：微信红包的意外与刻意</h3><ul>
+<li>迭代中，核心功能最重要。基于核心功能附加的其他功能点没有那么重要，可以一步步来。</li>
+<li>这就是产品的高低段位的差别，哪怕在你让用户选择版本这一个动作上，怎么能让用户舒舒服服地去更新，差别都是很大的。</li>
+<li>我们自己的人生也是迭代的产物。</li>
+<li>从一个最好的内核开始，一个一个动作地持续迭代和一次一次微小的选择，就会成就你的产品以及你的人生。</li>
+</ul>
+<h3 id="17-系统生死线：-猎豹和它的关键任务"><a href="#17-系统生死线：-猎豹和它的关键任务" class="headerlink" title="17 系统生死线： 猎豹和它的关键任务"></a>17 系统生死线： 猎豹和它的关键任务</h3><ul>
+<li>别人不敢玩、不敢拼的风险，就是壁垒。在生死线之外是安全区，安全区是没有壁垒的。</li>
+<li>面对生死考验的时候，你能依靠的不是管理能力，而是领导力。领导力的核心，是甄别“关键任务”，然后动员大家穿越生死。</li>
+<li>一个人如果曾经有一次穿越生死，他做事的态度，他的笃定和胆魄，一定不同于常人。每天都为一些员工的小情绪纠结掂量的管理者，一定是没经历过生死的。</li>
+</ul>
+<p>腾讯用风控能力区分职级：</p>
+<ol>
+<li>普通员工，明确知晓常见风险。</li>
+<li>项目经理，具备风险规避意识。</li>
+<li>总监，有风控能力。</li>
+<li>总经理，能操作有风险的执行。（富贵险中求）</li>
+</ol>
+<h2 id="04-用户体验（5讲）"><a href="#04-用户体验（5讲）" class="headerlink" title="04 用户体验（5讲）"></a>04 用户体验（5讲）</h2><h3 id="18-用户体验的五个层次"><a href="#18-用户体验的五个层次" class="headerlink" title="18 用户体验的五个层次"></a>18 用户体验的五个层次</h3><p>《用户体验要素》这本书里提到：“用户体验的要素，来自5个层次的层层选择与叠加建设。”这五层分别是：</p>
+<ul>
+<li>感知层；</li>
+<li>角色框架层；</li>
+<li>资源结构层；</li>
+<li>能力圈范围层；</li>
+<li>战略存在层。</li>
+</ul>
+<h3 id="19-怎样绘制用户体验的地图"><a href="#19-怎样绘制用户体验的地图" class="headerlink" title="19 怎样绘制用户体验的地图"></a>19 怎样绘制用户体验的地图</h3><p>定义：用户体验地图就是通过画一张图，用一种讲故事的方式，从一个特定用户的角度出发，记录下他与产品或服务进行接触、进入、互动的完整过程。</p>
+<p>怎样画用户体验地图？</p>
+<ol>
+<li>一个画像完整的人物角色。</li>
+<li>清晰描述用户的目标和预期。</li>
+<li>服务触点。</li>
+<li>用户使用路径。</li>
+<li>用户情绪曲线。</li>
+</ol>
+<p>为了避免管理员视角，很多初级产品经理都是用管理员视角在设计产品，有什么产品罗列什么，而不是考虑用户要什么。</p>
+<h3 id="20-服务蓝图的核心要素：峰值、终值"><a href="#20-服务蓝图的核心要素：峰值、终值" class="headerlink" title="20 服务蓝图的核心要素：峰值、终值"></a>20 服务蓝图的核心要素：峰值、终值</h3><p>服务蓝图到底要干什么？<br>服务蓝图要做一眼、一条路、三个点。<br>一眼：产品要第一时间让用户“一眼”看到自己的目标。<br>一条路：产品要有一个清晰的路径，让 用户能够知道如何使用你的服务，用来达到或者接近自己的目标。<br>三个点：峰值，终值和忍耐底线。</p>
+<p>心理学家丹尼尔·卡尼曼发现大家对体验的记忆由两个核心因素决定：</p>
+<ul>
+<li>第一个是体验最高峰的时候，无论是正向的最高峰还是负向的最高峰，一定是能记得住的。</li>
+<li>第二个是结束时的感觉。</li>
+</ul>
+<p>这就是峰终定律（Peak-End Rule） 。</p>
+<p><img src="http://shuxinyang.com/2019/03/05/Think-Like-a-PM/yijia.jpg" alt=""></p>
+<h3 id="21-上瘾机制：用户激励系统【重点】"><a href="#21-上瘾机制：用户激励系统【重点】" class="headerlink" title="21 上瘾机制：用户激励系统【重点】"></a>21 上瘾机制：用户激励系统【重点】</h3><p>首先，人会上瘾，是对确定性满足感的依赖。（用户预期）<br>其实，上瘾机制的设计，就是对用户激励机制的设计。<br>激励用户，你需要考虑如何用外在激励和内在激励来交替地持续激励他。设计你的激励系统，设置一系列用户的受激励点给用户成就感，定义他的获得能力，并降低门槛。</p>
+<p>激励系统的两个要素是“受激励点”和“被激励能力”。</p>
+<h3 id="22-名字是你的文化资产"><a href="#22-名字是你的文化资产" class="headerlink" title="22 名字是你的文化资产"></a>22 名字是你的文化资产</h3><ul>
+<li>雷军说，口碑就是要把事情做过头。</li>
+<li>口碑，就是替消费者设计一句话，一句口口相传的时候要说的话。</li>
+</ul>
+<h2 id="05-创新模式（5讲）"><a href="#05-创新模式（5讲）" class="headerlink" title="05 创新模式（5讲）"></a>05 创新模式（5讲）</h2><h3 id="23-用“用户价值公式”衡量创新"><a href="#23-用“用户价值公式”衡量创新" class="headerlink" title="23 用“用户价值公式”衡量创新"></a>23 用“用户价值公式”衡量创新</h3><ul>
+<li>互联网不是存量竞争，而是增量竞争。</li>
+<li>用户价值 = （ 新体验 - 旧体验 ） - 替换成本</li>
+<li>存量市场，小企业正面仰攻，新体验做到80分，用户体验为零分。增量市场，在用户体验为零的地方，你只要做到60分，用户就结结实实地觉得可以用了。</li>
+<li>速度第一，快速感染用户铺开市场，让最多的用户体验到你。这就是给后来者的壁垒，这就是蓝海的意义。</li>
+</ul>
+<h3 id="24-用“交叉视角”跨界创新"><a href="#24-用“交叉视角”跨界创新" class="headerlink" title="24 用“交叉视角”跨界创新"></a>24 用“交叉视角”跨界创新</h3><p><strong>相邻可能</strong>： 我们需要的某种能力要素，它可能已经产生并成熟了，只是它正在另外的某个领域被使用着。就看这个已经存在的未来，它会不会撞到你眼睛里，让你起心动念。这就是灵感的瞬间。</p>
+<ul>
+<li>创新重要的是面对痛苦，起心动念。</li>
+<li>为某件事感到痛苦，也许就是你心念已动的时候。而要寻找解决它的创新之处，不妨到其他领域转转。</li>
+</ul>
+<h3 id="25-怎样从新要素到新物种"><a href="#25-怎样从新要素到新物种" class="headerlink" title="25 怎样从新要素到新物种"></a>25 怎样从新要素到新物种</h3><ul>
+<li>如何利用不是本行业体验迭代产生的新要素，而是引用跨行业的新要素，让你的产品看起来依然是原来的产品，但是它已经成为了一个新物种。</li>
+<li>我们把互联网商业简单地抽象为三个要素，产品、流量和转化率。那么，实业商业可以简单地抽象成四个要素：产品、空间、流量和转化率。</li>
+</ul>
+<p>例子：亚朵酒店</p>
+<ol>
+<li>新要素一：找到实体空间的好位置</li>
+<li>新要素二：把“消费者”变成“投消者”</li>
+<li>新要素三：IP酒店</li>
+<li>新要素四：场景电商</li>
+</ol>
+<p>新产品一定要有新要素，否则没有竞争力。新要素有两种：</p>
+<ul>
+<li>第一种，在现有体验的基础上，运用最新科技等新要素，提升用户体验，或者改变成本结构。</li>
+<li>第二种，用整个社会经济升级、产业升级所产生的其他领域新要素，变革内在的商业逻辑。也许用户的前端体验，依然是那个产品、那个服务，但公司背后的商业运作，已经成为了完全不同的新物种。</li>
+</ul>
+<h3 id="26-三级火箭：深度讲解互联网降维打击"><a href="#26-三级火箭：深度讲解互联网降维打击" class="headerlink" title="26 三级火箭：深度讲解互联网降维打击"></a>26 三级火箭：深度讲解互联网降维打击</h3><p>互联网公司的三级火箭：</p>
+<ul>
+<li>第一级火箭：头部流量</li>
+<li>第二级火箭：沉淀某类用户的商业场景</li>
+<li>第三级火箭：完成商业闭环</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>举例</th>
+<th>第一级火箭</th>
+<th>第二级火箭</th>
+<th>第三级火箭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>360</td>
+<td>免费杀毒工具</td>
+<td>安全网络平台</td>
+<td>它最终承载的商业闭环</td>
+</tr>
+<tr>
+<td>搜狗</td>
+<td>头部流量</td>
+<td>内置搜索</td>
+<td>商业变现</td>
+</tr>
+<tr>
+<td>逻辑思维</td>
+<td>免费脱口秀</td>
+<td>沉淀用户的商业场景，得到App</td>
+<td>付费听课</td>
+</tr>
+<tr>
+<td>小米公司</td>
+<td>手机</td>
+<td>一系列零售场景</td>
+<td>一个高利润的产品</td>
+</tr>
+</tbody>
+</table>
+<p>要玩三级火箭，有几个必要条件：</p>
+<ol>
+<li>第一级火箭一定要高频应用。三级递推一定是高频推低频，没有低频推高频的。</li>
+<li>通过第一级火箭获得大量用户之后，要快速展开一个能够沉淀用户的商业场景。</li>
+<li>操盘三级火箭的人，一定是个势能积累到一定程度的人。</li>
+<li>操盘三级火箭的人，一定是个狠人。</li>
+</ol>
+<ul>
+<li>有一个问题值得思考，你是追求无限上升的快感？还是想在人类的天空上放一颗星星。</li>
+</ul>
+<h3 id="27-颠覆式创新：成败价值网"><a href="#27-颠覆式创新：成败价值网" class="headerlink" title="27 颠覆式创新：成败价值网"></a>27 颠覆式创新：成败价值网</h3><p>《创业者的窘境》：真正决定企业未来发展方向的是市场价值网，而非管理者；真正主导企业发展进程的是机构以外的力量，而非机构内部的管理者。管理者只是扮演一个象征性的角色。</p>
+<ul>
+<li>价值网里有三个角色：客户、对手、投资人，他们既成就了你，也会束缚你。</li>
+<li>一家企业会形成自己整体思考问题的方式，就是组织心智，一旦形成，很难改变。</li>
+<li>颠覆式创新最重要的标准就是，是否开启了一个新的价值网？你是不是到了“新大陆”？</li>
+</ul>
+<h2 id="06-产品世界观（3讲）"><a href="#06-产品世界观（3讲）" class="headerlink" title="06 产品世界观（3讲）"></a>06 产品世界观（3讲）</h2><h3 id="28-看产品的微观、中观与宏观视角"><a href="#28-看产品的微观、中观与宏观视角" class="headerlink" title="28 看产品的微观、中观与宏观视角"></a>28 看产品的微观、中观与宏观视角</h3><ul>
+<li><p>中观套路：学习招数。靠套路成不了高手。</p>
+</li>
+<li><p>微观体感：成为高手<br>成为天才的一万小时都干了些什么？大量的时间都是在建立细微的微观体感，建立长在自己身体上的真实感觉，眨眼之间的好恶判断。</p>
+</li>
+<li><p>宏观能力：打大仗<br>点线面体、创新模式都是宏观能力</p>
+</li>
+</ul>
+<h3 id="29-人生逻辑大于商业逻辑【重点】"><a href="#29-人生逻辑大于商业逻辑【重点】" class="headerlink" title="29 人生逻辑大于商业逻辑【重点】"></a>29 人生逻辑大于商业逻辑【重点】</h3><p><strong>抢风口</strong>，背后的一个核心能力是抢资源的能力：争夺最好的团队，争夺最大笔的投资，争夺公众最大化的关注，争夺合作伙伴最优质的资源与配合……<br>争夺这件事上，基本上女性的能力是弱于男性的。</p>
+<p>所有的“风口争夺战”挺到最后并飞上天的那个， 其实真没有谁是碰了运气的猪 ，全部是创业了好久，磨炼了好久的老手。</p>
+<p>马云的组织观：</p>
+<ul>
+<li>三级组织是共同规则。</li>
+<li>二级组织是共同利益。</li>
+<li>一级组织是共同信仰。</li>
+</ul>
+<p>所谓“完美的产品”“极致的产品”就像“完美的人”一样，只是一种追求，但世上并不存在。 重要的不是完美，而是对方要的那个确定性你是否还能提供，对方是否还依赖你，这才是关系的关键。</p>
+<p>如果你内心没有“确定感”，如果没有人依赖你，你也没有人可以依赖，点线面体、价值网、三级火箭这些创新战略，即使你看到了也是空无而不可持续的。</p>
+<ul>
+<li>其实正确的做法就是，自己真实能做到的。</li>
+<li>商业是以利润为中心，人生是以意义为中心。</li>
+<li>商业并非人生的全部。人死前盘点自己的一生，其实没有人看这一生赚了多少利润。</li>
+<li>做你有内心确定感的事，人生逻辑大于商业逻辑。</li>
+</ul>
+<h3 id="30-产品连接客观世界、过去与将来"><a href="#30-产品连接客观世界、过去与将来" class="headerlink" title="30 产品连接客观世界、过去与将来"></a>30 产品连接客观世界、过去与将来</h3><p>互联网时代结束了。2018年以后，新公司应该是以互联网为基础设施的科技公司，新品牌公司。</p>
+<p>愿你在这个时代，把握真正属于你的那个机会。把你一生积累的认知、审美、好恶全部用上，为这个世界提供一个不一样的产品，向世界交付你的价值。</p>
+
+                <hr>
+                
+                <!-- 多说 Share start -->
+                <div class="ds-share"
+                     style="text-align: right"
+                     data-thread-key="2019/03/05/Think-Like-a-PM/"
+                     data-title="《梁宁·产品思维30讲 -- 怎样从第一个用户到第一桶金》"
+                     data-url="http://moliusmile.github.io/2019/03/05/Think-Like-a-PM/"
+                     data-images=""
+                     data-content="课前必读01 发刊词 | 产品能力是每个人的底层能力在今天这个时代，如果让我给一个建议，那就是... | Shuxin Yang&#39;s blog ">
+                    <div class="ds-share-inline">
+                        <ul class="ds-share-icons-16">
+                            <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                            <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                            <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                            <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                        </ul>
+                        <div class="ds-share-icons-more">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/01/29/The-Age-of-AI/" data-toggle="tooltip" data-placement="top"
+                           title="《智能时代-大数据与智能革命重新定义未来》 吴军">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                         data-thread-key="2019/03/05/Think-Like-a-PM/"
+                         data-title="《梁宁·产品思维30讲 -- 怎样从第一个用户到第一桶金》"
+                         data-url="http://moliusmile.github.io/2019/03/05/Think-Like-a-PM/">
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#课前必读"><span class="toc-text">课前必读</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#01-发刊词-产品能力是每个人的底层能力"><span class="toc-text">01 发刊词 | 产品能力是每个人的底层能力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#02-案例：-用户体验与结婚教练"><span class="toc-text">02 案例： 用户体验与结婚教练</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#01-同理心（5讲）"><span class="toc-text">01 同理心（5讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#03-同理心训练：-怎样理解愉悦与不爽"><span class="toc-text">03 同理心训练： 怎样理解愉悦与不爽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#04-同理心训练：-怎样理解愤怒与恐惧"><span class="toc-text">04 同理心训练： 怎样理解愤怒与恐惧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#05-同理心训练：-产品要顺应用户潜意识"><span class="toc-text">05 同理心训练： 产品要顺应用户潜意识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#06-认清人的本性，理解角色化生存"><span class="toc-text">06 认清人的本性，理解角色化生存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#07-自我与自律，哪一种更贴近产品精神"><span class="toc-text">07 自我与自律，哪一种更贴近产品精神</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#02-机会判断（5讲）"><span class="toc-text">02 机会判断（5讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#08-机会判断：-点线面体的战略选择【重点】"><span class="toc-text">08 机会判断： 点线面体的战略选择【重点】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#09-机会判断：-怎样找到有势能的趋势【重点】"><span class="toc-text">09 机会判断： 怎样找到有势能的趋势【重点】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-痛点、痒点、爽点都是产品机会"><span class="toc-text">10 痛点、痒点、爽点都是产品机会</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-两套经典的用户画像"><span class="toc-text">11 两套经典的用户画像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-设计产品时要包括产品的场景"><span class="toc-text">12 设计产品时要包括产品的场景</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#03-系统能力（5讲）"><span class="toc-text">03 系统能力（5讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-怎样用系统能力给人提供确定性"><span class="toc-text">13 怎样用系统能力给人提供确定性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-系统效率：-小米的效率革命"><span class="toc-text">14 系统效率： 小米的效率革命</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-系统世界观：-微信、米聊、陌陌【重点】"><span class="toc-text">15 系统世界观： 微信、米聊、陌陌【重点】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16-系统迭代：微信红包的意外与刻意"><span class="toc-text">16 系统迭代：微信红包的意外与刻意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17-系统生死线：-猎豹和它的关键任务"><span class="toc-text">17 系统生死线： 猎豹和它的关键任务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#04-用户体验（5讲）"><span class="toc-text">04 用户体验（5讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#18-用户体验的五个层次"><span class="toc-text">18 用户体验的五个层次</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#19-怎样绘制用户体验的地图"><span class="toc-text">19 怎样绘制用户体验的地图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20-服务蓝图的核心要素：峰值、终值"><span class="toc-text">20 服务蓝图的核心要素：峰值、终值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#21-上瘾机制：用户激励系统【重点】"><span class="toc-text">21 上瘾机制：用户激励系统【重点】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#22-名字是你的文化资产"><span class="toc-text">22 名字是你的文化资产</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#05-创新模式（5讲）"><span class="toc-text">05 创新模式（5讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#23-用“用户价值公式”衡量创新"><span class="toc-text">23 用“用户价值公式”衡量创新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#24-用“交叉视角”跨界创新"><span class="toc-text">24 用“交叉视角”跨界创新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#25-怎样从新要素到新物种"><span class="toc-text">25 怎样从新要素到新物种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#26-三级火箭：深度讲解互联网降维打击"><span class="toc-text">26 三级火箭：深度讲解互联网降维打击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#27-颠覆式创新：成败价值网"><span class="toc-text">27 颠覆式创新：成败价值网</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#06-产品世界观（3讲）"><span class="toc-text">06 产品世界观（3讲）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#28-看产品的微观、中观与宏观视角"><span class="toc-text">28 看产品的微观、中观与宏观视角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#29-人生逻辑大于商业逻辑【重点】"><span class="toc-text">29 人生逻辑大于商业逻辑【重点】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#30-产品连接客观世界、过去与将来"><span class="toc-text">30 产品连接客观世界、过去与将来</span></a></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#note"
+                           title="note">note</a>
+                        
+                        <a class="tag" href="/tags/#pm"
+                           title="pm">pm</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://aljun.me">Aljun</a></li>
+                        
+                        <li><a href="https://dongleizhang.github.io/">Donglei Zhang</a></li>
+                        
+                        <li><a href="http://www.choosefoto.com">CHOOSE FOTO</a></li>
+                        
+                        <li><a href="http://acge.ga/">A-C-G-E</a></li>
+                        
+                        <li><a href="http://weibo.com/icsszju?is_hot=1">Hang Ye</a></li>
+                        
+                        <li><a href="https://ferrinfriends.github.io/">Ferri</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'moliusmile';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/mo-liu-38-73">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/shuxin-yang-680304b5">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Shuxin Yang 2019
+                    <br>
+                    &hearts; &hearts; <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times </span> &hearts; &hearts;
+					<br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://moliusmile.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-88475808-1';
+    var _gaDomain = 'shuxinyang.com';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    var _baId = 'fa02b72eee073d39f5dca3d531c29928';
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://shuxinyang.com/aboutme/Denise2.jpg">
+</body>
+
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shuxin Yang&#39;s blog | Coding and Running Girl">
+    <meta name="keyword" content="null">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://oho5zsu61.bkt.clouddn.com/favicon_love.png">
+    <link rel="alternate" type="application/atom+xml" title="Shuxin Yang" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        《培训行业这一年·2019》｜Shuxin Yang&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://moliusmile.github.io/2020/02/16/The-Development-of-Training-Industry-2019/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_starry.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Shuxin Yang
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/aboutme/AboutMe.html">ABOUT ME</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/works/">MY WORKS</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">TAGS</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>《培训行业这一年·2019》</h1>
+                    
+                    <span class="meta">
+                         author Shuxin Yang
+                        <span>
+                         time 2020-02-16
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
+                        
+                        <a class="tag" href="/tags/#教育"
+                           title="教育">教育</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            《培训行业这一年·2019》
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <blockquote>
+<p>“有限的只是我们的视野，而非我们所审视的事物本身，意识到这点，就能够突破任何界限。”  –詹姆斯·卡斯《有限与无限的游戏》</p>
+</blockquote>
+<h2 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h2><p><img src="http://shuxinyang.com/2020/02/16/The-Development-of-Training-Industry-2019/cover.jpg" alt=""></p>
+<ul>
+<li>作者：多知网</li>
+<li>出版社：新华出版社</li>
+<li>出版时间：2019-12</li>
+</ul>
+<h2 id="第一章-头部之争，拼组织力的时代来临"><a href="#第一章-头部之争，拼组织力的时代来临" class="headerlink" title="第一章 头部之争，拼组织力的时代来临"></a>第一章 头部之争，拼组织力的时代来临</h2><h3 id="01-新东方：蹚进改革“深水区”"><a href="#01-新东方：蹚进改革“深水区”" class="headerlink" title="01 新东方：蹚进改革“深水区”"></a>01 新东方：蹚进改革“深水区”</h3><p>【问题】俞敏洪在给高管的信中提到三个核心问题，包括：三化改革（标准化、流程化、系统化）、人才建设、组织建设。其中，三化改革又是重中之重。三化改革背后，是新东方想解决但一直未能解决的问题–步调不统一、沟通成本高、效率不够、内耗太大。</p>
+<p>【品牌】过去，新东方的K12业务一个是泡泡少儿教育，一个是优能中学教育，各自独立的品牌名容易让用户会下意识地做品牌区隔。先推出独立的品牌做大K12业务，再回到统一品牌（新东方中小学全科教育）上做内部资源打通，新东方的策略变化映射出的是新时代的业务逻辑。</p>
+<p>【长线vs短线】从长线战略来说，不可能为了满足短期指标，而采取大量短期行为。如果采取这样的做法，我们会错过最宝贵的苦练内功的窗口期，这是对用户不负责任的行为。</p>
+<p>【人才】对于人才发展而言，一定是通道要宽，速度要快。通道不宽，没有那么多岗位给大家，一定培养不出那么多人。如果速度不快，一个人在一个岗位上的时间太久，也段炼不了人才。</p>
+<h3 id="02-好未来：组织变革，去新的战场拓土开疆"><a href="#02-好未来：组织变革，去新的战场拓土开疆" class="headerlink" title="02 好未来：组织变革，去新的战场拓土开疆"></a>02 好未来：组织变革，去新的战场拓土开疆</h3><p>【在线】在线教学不是将线下课堂搬到线上，而是在互联网杠杆效应加持下重构整个学习场景。</p>
+<p>【发展】回顾整个学而思网校的发展历程，白云峰用三个核心阶段来形容。</p>
+<ol>
+<li>以教学和产品为核心</li>
+<li>从教学转换到以技术驱动为核心</li>
+<li>互联网产品</li>
+</ol>
+<p>【开放平台】为了让AI技术更好适配线上线下、不同教育机构的需求，好未来教育开放平台设计了三层AI赋能B端的结构：</p>
+<ol>
+<li>AI能力平台，为线上线下机构提供底层技术；</li>
+<li>AI内容生产平台，为线下中大型机构提供定制化内容平台；</li>
+<li>AI内容，为线下中小机构提供标准化的AI内容</li>
+</ol>
+<p>【智慧教育】对于未来的方向，科技部给好未来提出了指导意见。“我们要站在中国教育的视角去看待教育，核心点是如何借助科技尤其是AI技术来促进一个繁荣教育生态的建设。在这个生态里，我们把智慧教育国家新一代人工智能开放创新平台视作最大的框架，叫作框架性平台，这个平台里会有不同的参与者。”</p>
+<h3 id="03-中公：在“沙漠”上辟“良田”，造“理想国”"><a href="#03-中公：在“沙漠”上辟“良田”，造“理想国”" class="headerlink" title="03 中公：在“沙漠”上辟“良田”，造“理想国”"></a>03 中公：在“沙漠”上辟“良田”，造“理想国”</h3><p>【四化】研发专业发、教师专职化、渠道直营化、运营科技化</p>
+<p>【协议班】这一模式以自然通过率为基础，并根据学员未通过不同阶段考试如笔试未过、未进面试以及未被录用等情况退还一定比例的费用。</p>
+<p>【组织结构】中公分校的组织结构和指挥模型分为两条线。一是经营条线，以省为单位，由分校主管，形成一个大的集营销、服务、组织教学管理于一体的单位。二是负责研发、师资条线的研究院，直属总部。</p>
+<p>【科技】“教育领域，应该是所有行业里面对科技的应用最具深度的一个领域。但是，科技的应用不等于在线教育，在线教育只是科技在教育行业的应用的一部分。”</p>
+<h2 id="第二章-红海序曲：在线大班课全面竞争"><a href="#第二章-红海序曲：在线大班课全面竞争" class="headerlink" title="第二章 红海序曲：在线大班课全面竞争"></a>第二章 红海序曲：在线大班课全面竞争</h2><h3 id="04-猿辅导：不设限，狠劲创新"><a href="#04-猿辅导：不设限，狠劲创新" class="headerlink" title="04 猿辅导：不设限，狠劲创新"></a>04 猿辅导：不设限，狠劲创新</h3><p>【小猿口算】</p>
+<ul>
+<li>小猿口算单日批改题目数超过2亿道，服务用户3000千万，其中横式题目的批改准确率已达到99.9%，超过了人类平均水平。</li>
+<li>如何抓住家长流量？猿辅导发现家长的高频刚需就是批改作业。</li>
+<li>工具产品跟课程产品最大的不同是：它没有服务端的压力，最终是靠技术说话，而这恰恰是猿辅导最擅长的部分。</li>
+</ul>
+<p>【斑马英语】</p>
+<ul>
+<li>和在线K12双师大班课业务不同，斑马系列产品均为AI互动课，瞄准的是低幼阶段（0-8岁），由猿辅导联合创始人、技术负责人郭常圳带队。</li>
+<li>猿辅导用AI的方式去打低幼市场，却用真人直播的模式做中小学市场。但是，未来会如何演化，仍然需要依据效果和数据做调整。</li>
+</ul>
+<h3 id="05-作业帮：打好K12大班直播课的持久战"><a href="#05-作业帮：打好K12大班直播课的持久战" class="headerlink" title="05 作业帮：打好K12大班直播课的持久战"></a>05 作业帮：打好K12大班直播课的持久战</h3><p>【变现】像作业帮这种月活有1.2亿的工具产品，它必然也有变现的方法。但是，需要解决两个问题：一个是如何打通变现路径，二是怎么打造供给，包括SKU供给和师资供给。</p>
+<p>【内功】围绕内功，作业帮这两年重点做了两件事：一是，提高组织效率，为此做了大量标准化的教学流程。二是，作业帮对技术和产品能力做了整合，相对于搭建了类似中台的技术体系。</p>
+<p>【直播课】作业帮直播课的理念是：“好的教学服务是全周期数据化管理的过程，因此，会通过数据来进行跟踪，让家长和老师不间断地了解一个学生。”</p>
+<p>【徒步】对于徒步，陈恭明解释：“第一，教育是慢行业，链条长，需要修炼内功，这对团队的考验很大，希望大家能有这样吃苦的精神；第二，K12是一个超级大赛道，而且前各家加起来渗透率也不算高，未来还有很大的增长空间。因此，我们希望走得更扎实一些，大家也能跟着这个赛道走得很远。”</p>
+<h3 id="06-跟谁学：向阳生长"><a href="#06-跟谁学：向阳生长" class="headerlink" title="06 跟谁学：向阳生长"></a>06 跟谁学：向阳生长</h3><p>【上市】北京时间2019年6月6日晚上，跟谁学在纽交所敲钟上市。伴随着上市，跟谁学的身上也多了诸多新标签：在线K12大班课第一家美股上市公司、首家规模盈利的在线K12上市公司、首家仅完成A轮融资就上市的在线教育公司······</p>
+<p>【公开课】</p>
+<ul>
+<li>公开课成为跟谁学获客的重要入口，这也对公开课的水准提出了更高的要求。</li>
+<li>家长对产品越来越挑剔，公司需要具备的竞争能力就是产品一定要非常优秀，仅仅比平均水平好一点是不够的。</li>
+<li>跟谁学依靠主讲老师的，远不止是讲课水平。基于公开课的关键引流作用，跟谁学的主讲老师被赋予了“销售”的使命。</li>
+</ul>
+<h3 id="07-网易有道：用产品思维重构教育基因"><a href="#07-网易有道：用产品思维重构教育基因" class="headerlink" title="07 网易有道：用产品思维重构教育基因"></a>07 网易有道：用产品思维重构教育基因</h3><p>【产品】</p>
+<ul>
+<li>有道的产品主要分为四部分：在线课程（以有道精品课为主）、智能硬件（词典笔、翻译王等一系列硬件矩阵）、学习工具APP（有道词典、有道翻译官等）、AI互动学习产品（有道数学、有道乐读等）。从年龄段来看，有道的产品覆盖少儿启蒙、K12以及大学生等学龄段。</li>
+<li>所有的互联网产品管理，最后往往是落脚到场景强不强、产品能不能满足场景。</li>
+<li>用户范围广、用户活跃度高、用户质量高、可转化潜力强，就成为有道筑起工具产品流量池的重要前提。</li>
+</ul>
+<p>【大班课】技术、来自工具产品的流量、基于工作室模式的内容流水线，这三点是周枫认为有道做大班课的特色所在，也是其竞争大班课红海市场的关键逻辑。</p>
+<p>【价值】做任何一件事情都需要关注是不是能对用户创造价值。如果有用户价值，那就会有潜在的商业价值。</p>
+<h3 id="08-在线K12大班课：正面较量的时刻来了"><a href="#08-在线K12大班课：正面较量的时刻来了" class="headerlink" title="08 在线K12大班课：正面较量的时刻来了"></a>08 在线K12大班课：正面较量的时刻来了</h3><p>【行业】</p>
+<ul>
+<li>虽然，2014年曾有题库大站，2015年曾有教育O2O“百团大战”，2017年曾有在线外教激烈角逐······但是，2019年K12在线大班课的较量，无论在参赛选手的规模上、投入度上，都远超过去几个风口的竞争。可以说，这是在线教育第一次如此高强度的正面大战。</li>
+<li>在小学三年级以下，英语培训是刚需，但是在三年级之后，数学就成为更强的刚需。</li>
+<li>从生源结构来看，K12学龄段学生有很好的延续性，但是比较理想的结构是正金字塔形，小学生源多。小学学员毕业后可以源源不断地直升到初中、高中年级。</li>
+<li>K12学科辅导是一个非常复杂的市场，各地的教材版本、难度、进度、考试题型都有很大的差异性，这些差异性决定了K12学科辅导很难成为一个放之四海而皆准的标品。</li>
+</ul>
+<h3 id="09-培训、图书之外，粉笔的第三个梦"><a href="#09-培训、图书之外，粉笔的第三个梦" class="headerlink" title="09 培训、图书之外，粉笔的第三个梦"></a>09 培训、图书之外，粉笔的第三个梦</h3><p>【线下】目前来看，通过聚焦“产品标准化”和“服务个性化”，一心想做“公考届的顺丰”的粉笔，线下之路走得风生水起。</p>
+<p>【产品线】张小龙梳理了粉笔目前的三类产品线：</p>
+<ul>
+<li>第一类是纯互联网的产品，也就是会员和纯在线的产品，跟视频网站的会员类似，目前这块儿业务的营收不是很多，但利润很高。</li>
+<li>第二类产品就是图书，是工业化、标准化的产品。</li>
+<li>第三类产品是“农业产品”，就是现在的培训产品，大量人力资源投放在这个业务上。</li>
+</ul>
+<p>【金字塔逻辑】在张小龙构想的理想商业模式中，这些丰富的产品线内含一条筛选、过滤、分层用户的金字塔逻辑：用免费的题库产品，将流量做出规模、承接金字塔底部所有有需求的用户；用低价的会员产品及图书承接广泛的对价格敏感、自律性强的用户；用系统班产品迎合有跟高期待、愿付出更多时间精力的用户；用更重的线上线下产品满足金字塔顶部消费能力强、培训意愿强、需要个性化服务的用户。</p>
+<h2 id="第三章-一对一披荆斩棘：闯出自己的路"><a href="#第三章-一对一披荆斩棘：闯出自己的路" class="headerlink" title="第三章 一对一披荆斩棘：闯出自己的路"></a>第三章 一对一披荆斩棘：闯出自己的路</h2><h3 id="10-精锐教育的二次创业：既要上天，也要入地"><a href="#10-精锐教育的二次创业：既要上天，也要入地" class="headerlink" title="10 精锐教育的二次创业：既要上天，也要入地"></a>10 精锐教育的二次创业：既要上天，也要入地</h3><p>【人效】</p>
+<ul>
+<li>教育行业是人力密集型产业，“人效管理”是很多企业都面临的问题。上市时，精锐1.6万名员工，人效30万元，净利润20%。</li>
+<li>阿里，B2B人效60万元，淘宝人效120万，支付宝等产品问世后，人效一路上升。</li>
+</ul>
+<p>【标准化】在精锐创业时就开始搭建的ERP系统，将管理、教学、教师培训等环节纳入到整套运营管控系统之中。张熙坦言，实施标准化是精锐教育创办以来能够在激烈的市场竞争中脱颖而出，并迅速实现规模化、连锁化成长的关键因素。</p>
+<p>【OMO】</p>
+<ul>
+<li>OMO：Online-Merge-Offline</li>
+<li>线上、线下相融合–是目前行业尚未攻克的难题，谁能率先解决这个问题，对其运营能力及商业模式来说都是“质”的飞跃。OMO则意味着对未来的新获客方式和渠道的把握。</li>
+<li>焦典分析：教育行业的OMO现在有几个形态。第一种，将线下的个性化一对一搬到线上，从用户体验来说几乎是一致的，这个对运营体系冲击也比较小，相对比较容易；第二种，同构模式，线下教学，线上服务。所谓同构型就是班型一致，在线学习的空间和线下学习空间不一样；第三，异构模式。线下是一种模式，线上是班课一对N或一对一。焦典介绍，这也是OMO的终极形态。终极形态需要组织架构、业务形态的有力支撑。</li>
+<li>现阶段的精锐OMO理想模式是：高端市场–佳学慧、UUabc与精锐教育，中高端市场–巨人网校、溢米教育与巨人学校，在针对不同用户品牌组合中形成教研共享、流量互导。</li>
+</ul>
+<p>【市场】K12市场被分为三层：高端市场、中高端市场、大众市场。按照弗若斯特沙利文报告，K12行业中一些最大的参与者专注于大众市场和中高端市场–其中，新东方在大众市场有绝对优势，中高端市场的佼佼者是好未来。精锐则一直在用更重的个性化服务、更高端服务稳居在高端市场。</p>
+<p>【巨人】精锐和巨人两大业务模块是未来我们“腾飞的两翼”，我们将借助精锐这一高端品牌去占领高端市场，借助巨人这一大众品牌去占领大众市场，并让这“腾飞的两翼”相得益彰。</p>
+<h3 id="11-徒手攀岩2020：VIPKID要做自己的摆渡人"><a href="#11-徒手攀岩2020：VIPKID要做自己的摆渡人" class="headerlink" title="11 徒手攀岩2020：VIPKID要做自己的摆渡人"></a>11 徒手攀岩2020：VIPKID要做自己的摆渡人</h3><p>【中教】中教更适合语法和词汇的教授，外教则适合提供母语式浸入的教学方法。目前在课程中，中教负责新知识传授，负责教学练一体；外教互动录播+直播，结合阅读语境辅导学员深入理解，最后进行应用。</p>
+<p>【AI】AI的融入比例一定会基于VIPKID对课程效果和教学目标的设计而定。</p>
+<p>【分层】用户需求分层能够在前期就为学员提供更精准的课程，避免了沉睡用户数量的增长。另一方面，用户需求分层的出口是更多的产品类型，是对效果的重新定义，也为已经沉睡的用户提供了新的产品，试图刺激和唤醒他们。</p>
+<h3 id="12-掌门教育：第二场战争"><a href="#12-掌门教育：第二场战争" class="headerlink" title="12 掌门教育：第二场战争"></a>12 掌门教育：第二场战争</h3><p>【行动】“很多公司喜欢把事情想得非常完美之后再去做，但想得完美，会花费很长时间。在我们公司，思考过长时间而不行动会被定义为低效。”</p>
+<p>【指挥】第一次开董事会，张翼就提出，他希望让听到炮声的人来指挥战争，要对他进行充分的授权。</p>
+<p>【管理】对于CEO个人来说，管理千人规模以上的公司，关键看能否做到“管一层听一层看一层”，“这是一个CEO的修炼”。</p>
+<h3 id="13-轻轻家教：接地生根，踏实成长"><a href="#13-轻轻家教：接地生根，踏实成长" class="headerlink" title="13 轻轻家教：接地生根，踏实成长"></a>13 轻轻家教：接地生根，踏实成长</h3><p>【模式】轻轻家教是一家“上门家教+在线教育”并行发展的公司。</p>
+<p>【流量】</p>
+<ul>
+<li>线上流量是花钱购买，比的是花钱的效率。</li>
+<li>线下流量拼的是组织运营能力。</li>
+<li>“大家愿意做简单的事情，花钱买流量。今年突然发现，流量太贵了，要下沉，但是下沉的门槛却很高。我一直认为，线上买流量就像吸毒一样，会让自己变得越来越虚弱，钱应该花在自身的组织能力建设上，应该花在强身健体方面。”</li>
+</ul>
+<p>【合作】“轻轻家教与海风教育达成全面战略合作”–2019年8月23日，这一磨合了三个月的合作终于落定。一方是提供“在线1对1、在线小班课、上门家教”服务，具备较强线下获客能力的轻轻家教；一方是拥有数千名全职老师的纯在线1对1海风教育。</p>
+<h2 id="第四章-AI互动课，下一个竞逐高低"><a href="#第四章-AI互动课，下一个竞逐高低" class="headerlink" title="第四章 AI互动课，下一个竞逐高低"></a>第四章 AI互动课，下一个竞逐高低</h2><h3 id="14-洋葱数学，厚积薄发的力量"><a href="#14-洋葱数学，厚积薄发的力量" class="headerlink" title="14 洋葱数学，厚积薄发的力量"></a>14 洋葱数学，厚积薄发的力量</h3><p>【C端和B端】</p>
+<ul>
+<li>围绕着“全面发力”作为核心主题，洋葱开始了C端多学科发展、B端系统化推进的进取之路。</li>
+<li>在C端，洋葱搭建出了课程中台，总结出了一套扩科逻辑；在B端，洋葱将教师业务和学校渠道业务合并成教师与学校业务群。</li>
+</ul>
+<p>【内功】产品模型的跑通、用户需求的验证、商业变现的摸索，是洋葱在过去五年里修炼的内功。</p>
+<p>【品控】</p>
+<ul>
+<li>课程上线之前的品控是最难的，因为它先于用户体验存在，主要依托的是洋葱本身积累的经验以及过往收集的数据，这是洋葱核心壁垒的体现。</li>
+<li>视频上线之后的品控则相对比较常规，一种是基于行为数据来判断，例如用户在视频观看过程中的反应时间、准确率、进度条拖拽等等；另一种则是基于结果来判断，通过用户视频学习之后的练习答题情况进行追踪。</li>
+</ul>
+<h3 id="15-AI互动课，能否再造一个在线教育的奇迹？"><a href="#15-AI互动课，能否再造一个在线教育的奇迹？" class="headerlink" title="15 AI互动课，能否再造一个在线教育的奇迹？"></a>15 AI互动课，能否再造一个在线教育的奇迹？</h3><p>【发展】AI互动课突破了传统录播课的瓶颈：做重互动、做重教研、做重实时反馈和交互，并且凭借着稳健的商业模型，逐渐站到了在线教育的主流视野中。</p>
+<p>【教研】互动是AI互动课的根本，但从更深一层来说，互动是教研效果的外化。每个互动情境的背后，都可以追溯到教研的大逻辑。</p>
+<p>【教与学】AI互动课的介入，正在对传统教学进行覆盖：学生不再是被动地听取老师讲述，有了更多的学习主动权。更通俗地说，AI互动课不再以“老师、家长为中心”，而是“以学生为中心”。</p>
+<p>【获客成本】投资人看到的数据是：“就K12在线一对一而言，当年第一梯队获客成本在6000-8000元左右，第二梯队在14000元左右，第三梯队在18000元左右。”</p>
+<h2 id="第五章-素质教育初奏华美乐章"><a href="#第五章-素质教育初奏华美乐章" class="headerlink" title="第五章 素质教育初奏华美乐章"></a>第五章 素质教育初奏华美乐章</h2><h3 id="16-火花思维：跑出在线数理思维的加速度"><a href="#16-火花思维：跑出在线数理思维的加速度" class="headerlink" title="16 火花思维：跑出在线数理思维的加速度"></a>16 火花思维：跑出在线数理思维的加速度</h3><p>【数理思维】数学是所有思维能力培养的基础，掌握了逻辑思维才能更好地学习其他科目，但数理思维不是简单的计算，更不是背诵。</p>
+<p>【产品】</p>
+<ul>
+<li>火花思维快速前进的核心是在产品方面取得了重大突破，开创性地推出了“情景动画故事+知识点操作+教具实物配合”的学习方式。</li>
+<li>如果做一个比喻，在VIPKID，教研是剧本，老师时演员；在火花思维，教研则是剧本加导演，技术是监制，演员不仅仅是老师了，还有课件中的各种角色。</li>
+</ul>
+<p>【规模发展】</p>
+<ul>
+<li>目前火花思维基本是靠自我流量，75%的用户是转介绍而来。</li>
+<li>罗剑对教育秉持的是“长期主义”理念，至少奔着十年以上去做，以“慢公司”的心态，潜心打磨产品、升华教研，让数理思维成为超级赛道。</li>
+</ul>
+<p>【扩科】扩品类扩科，即在年龄段和科目上做延展，对于火花思维而言，AI数理思维课是为了延伸下沉市场和低幼用户，向纵深发展，延长LTV(Life Time Value)；而大语文是用扩科的方式沉淀前期流量，横向发展，进一步降低获客成本。</p>
+<h3 id="17-美术宝教育：跑出少儿美术的“势能差”"><a href="#17-美术宝教育：跑出少儿美术的“势能差”" class="headerlink" title="17 美术宝教育：跑出少儿美术的“势能差”"></a>17 美术宝教育：跑出少儿美术的“势能差”</h3><p>【现状】现如今美术宝1对1获客成本和师资成本分别约占总成本的30%、40%；实现首单盈利，续费率80%，转化率40%，在行业内都属于第一梯队水平。</p>
+<p>【策略】历经了五年快跑后，当下对美术宝教育来说，最重要的事是提升运营效率，包括产品赋能、中台搭建、班主任服务模型的优化–好产品、好师资、好服务，才能构成好口碑。</p>
+<h3 id="18-线下少儿英语的自我进击：于边界中重建城池"><a href="#18-线下少儿英语的自我进击：于边界中重建城池" class="headerlink" title="18 线下少儿英语的自我进击：于边界中重建城池"></a>18 线下少儿英语的自我进击：于边界中重建城池</h3><p>【风暴】从外部环境来看，真正曾为线下少儿英语市场带来过恐慌与震荡的，其实只有三次。但三次巨变发生期间，都曾频频出现少儿英语品牌倒闭、市场萎缩、卷款跑路等负面消息。</p>
+<ul>
+<li>第一场风暴–2014年9月，国务院颁布《关于深化考试招生制度改革的实施意见》。</li>
+<li>第二场风暴–在线教育崛起。</li>
+<li>第三场风暴–多政策加紧管控。</li>
+</ul>
+<p>【课件】袁雪指出，瑞思正在将知识的传递主体变为课件：“有了标准化的课件，那知识引导流程和讲解步骤都不会错，这本就应该被固定。”而当课件成了知识的传递主体，教师的存在意义就变成了让知识“有温度”地被传递到学员认知层面的核心媒介。</p>
+<h3 id="19-少儿编程：爆发之后，重回理性"><a href="#19-少儿编程：爆发之后，重回理性" class="headerlink" title="19 少儿编程：爆发之后，重回理性"></a>19 少儿编程：爆发之后，重回理性</h3><p>【玩家】行业头部选手也开始看中少儿编程赛道。好未来收购以色列少儿编程平台CodeMonkey，猿辅导推出猿编程，网易孵化相关产品有道卡塔，A股公司传智播客也开始有所行动，推出酷丁鱼。</p>
+<p>【课程导师】核桃编程的AI模式配备了课程导师角色。王宇航补充道：“学生学习的兴趣不单是来自内容本身，还有可能是来自家长和老师的夸奖，或者超越同龄人获得的成就感，其中包含很多人为因素，所以课程导师存在的作用还在于挖掘学生学习的兴趣。”</p>
+<p>【培养】多个少儿编程机构表示：“少儿编程实际上并不是培养‘码农’，而是激发孩子的学习兴趣，培养思维能力和解决问题的能力。”</p>
+<h2 id="第六章-出发，挺进下沉市场"><a href="#第六章-出发，挺进下沉市场" class="headerlink" title="第六章 出发，挺进下沉市场"></a>第六章 出发，挺进下沉市场</h2><h3 id="20-思考乐：大湾区的又一匹K12黑马"><a href="#20-思考乐：大湾区的又一匹K12黑马" class="headerlink" title="20 思考乐：大湾区的又一匹K12黑马"></a>20 思考乐：大湾区的又一匹K12黑马</h3><p>【校区经营制】据介绍，校长的薪酬体系往往有两种计算方式，其一是课酬及提成，其二是校区的续报等指标达标，年底获得分红，二者取其高。</p>
+<h3 id="21-立思辰：用“大语文”破解K12市场的密码"><a href="#21-立思辰：用“大语文”破解K12市场的密码" class="headerlink" title="21 立思辰：用“大语文”破解K12市场的密码"></a>21 立思辰：用“大语文”破解K12市场的密码</h3><p>【大语文】提出“全面大语文化”的口号，以大语文为重点战略业务，转型的思路是：逐渐剥离非核心业务，其余业务与大语文业务协同打通，形成以大语文为主体，新高考、智慧教育为辅助的三大核心业务体系。</p>
+<p>【名师战略】</p>
+<ol>
+<li>教师结构性选拔：窦昕将原先凭面试官个人印象打分的机制转变成类型化打分，并由此总结出大语文每年只需要90%的“姚奋斗”和10%对“杨大名”，其余的都不录用。窦昕接着解释道，“姚奋斗”的人有财务自由的追求，他更会认真对待，想把这份工作做好，更稳定；“杨大名”的人各方面都很突出，做教育是为了实现自我价值，更具有创新性，两者结合可以保障教师队伍的稳定性。</li>
+<li>师徒培训制</li>
+<li>四人搭课制</li>
+<li>满意度代替续报率</li>
+</ol>
+<p>【用户】远方文学前大语文教师张苍术曾在接受媒体采访时表示，小学一年级学生由于认知水平程度不高，不适合学大语文；语文基础不扎实的学生也不建议学习大语文。</p>
+<h3 id="22-“AI老师”下沉：想象空间在哪儿？"><a href="#22-“AI老师”下沉：想象空间在哪儿？" class="headerlink" title="22 “AI老师”下沉：想象空间在哪儿？"></a>22 “AI老师”下沉：想象空间在哪儿？</h3><p>【松鼠AI】栗浩洋介绍，松鼠AI老师引擎架构分为三层。</p>
+<ul>
+<li>第一层是本体层，主要是知识地图、内容地图、MCM思想能力方法模型、错因分析和动态目标。</li>
+<li>第二层是算法层，包括推荐引擎、用户画像引擎、目标管理引擎等。</li>
+<li>第三层是人机交互。</li>
+</ul>
+<h3 id="23-下沉，下沉！"><a href="#23-下沉，下沉！" class="headerlink" title="23 下沉，下沉！"></a>23 下沉，下沉！</h3><p>【模式】总结来看，目前教育机构在下沉时主要有To B和To C两个路径。其中：</p>
+<ul>
+<li>To B主要以双师课堂及配套解决方案（如未来魔法校、爱学习）、授权内容（如编程猫）为主。</li>
+<li>To C则有开设线下直营校（如中公），线下双师（如新东方、好未来）、城市合伙人（如精锐）、城市驻点（如轻轻家教）等方式，</li>
+</ul>
+<h2 id="第七章-新政下的求变之路"><a href="#第七章-新政下的求变之路" class="headerlink" title="第七章 新政下的求变之路"></a>第七章 新政下的求变之路</h2><h3 id="24-“合规”之年，进校类APP的生存考验"><a href="#24-“合规”之年，进校类APP的生存考验" class="headerlink" title="24 “合规”之年，进校类APP的生存考验"></a>24 “合规”之年，进校类APP的生存考验</h3><p>【政策】2018年12月28日，教育部下发《关于严禁有害APP进入中小学校园的通知》要求“进入校园的学习类APP不得向学生收费或由学生支付相关费用”，这使得进校APP原有的增值服务收费商业模式面临转型。</p>
+<p>【校内】小盒科技联合创始人王克曾表示：“一开始就选择做体制内，不做体制内，就谈不上对K12教育的变革。”</p>
+<p>【产品】进校的教育类产品可以分为两类：一是工具类APP，通常是基础功能免费，通过增值服务收费。二是内容类（如提供英语、数学等学习内容），通常走政府/学校采购的道路。一起教育科技和小盒科技都属于前者。</p>
+<h3 id="25-“民办摇号”：民办中小学发展的分水岭？"><a href="#25-“民办摇号”：民办中小学发展的分水岭？" class="headerlink" title="25 “民办摇号”：民办中小学发展的分水岭？"></a>25 “民办摇号”：民办中小学发展的分水岭？</h3><p>【公民同招】国家政策顶层设计者对义务教育阶段的民办中小学的定位就是要符合“公平、均衡和均等”的要求。</p>
+<p>【验证】2020年将是“民办摇号”具体落地见分晓的第一年。一所学校的质量和水平至少需要三年一个周期才能显现，之后民办校究竟将会产生怎样的演变，或许还需要很长一段时间。</p>
+
+                <hr>
+                
+                <!-- 多说 Share start -->
+                <div class="ds-share"
+                     style="text-align: right"
+                     data-thread-key="2020/02/16/The-Development-of-Training-Industry-2019/"
+                     data-title="《培训行业这一年·2019》"
+                     data-url="http://moliusmile.github.io/2020/02/16/The-Development-of-Training-Industry-2019/"
+                     data-images=""
+                     data-content="
+“有限的只是我们的视野，而非我们所审视的事物本身，意识到这点，就能够突破任何界限。”  –詹... | Shuxin Yang&#39;s blog ">
+                    <div class="ds-share-inline">
+                        <ul class="ds-share-icons-16">
+                            <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                            <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                            <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                            <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                        </ul>
+                        <div class="ds-share-icons-more">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/12/01/The-Development-of-Training-Industry-2018/" data-toggle="tooltip" data-placement="top"
+                           title="《培训行业这一年·2018》">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                         data-thread-key="2020/02/16/The-Development-of-Training-Industry-2019/"
+                         data-title="《培训行业这一年·2019》"
+                         data-url="http://moliusmile.github.io/2020/02/16/The-Development-of-Training-Industry-2019/">
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#版本信息"><span class="toc-text">版本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章-头部之争，拼组织力的时代来临"><span class="toc-text">第一章 头部之争，拼组织力的时代来临</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#01-新东方：蹚进改革“深水区”"><span class="toc-text">01 新东方：蹚进改革“深水区”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#02-好未来：组织变革，去新的战场拓土开疆"><span class="toc-text">02 好未来：组织变革，去新的战场拓土开疆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#03-中公：在“沙漠”上辟“良田”，造“理想国”"><span class="toc-text">03 中公：在“沙漠”上辟“良田”，造“理想国”</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章-红海序曲：在线大班课全面竞争"><span class="toc-text">第二章 红海序曲：在线大班课全面竞争</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#04-猿辅导：不设限，狠劲创新"><span class="toc-text">04 猿辅导：不设限，狠劲创新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#05-作业帮：打好K12大班直播课的持久战"><span class="toc-text">05 作业帮：打好K12大班直播课的持久战</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#06-跟谁学：向阳生长"><span class="toc-text">06 跟谁学：向阳生长</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#07-网易有道：用产品思维重构教育基因"><span class="toc-text">07 网易有道：用产品思维重构教育基因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#08-在线K12大班课：正面较量的时刻来了"><span class="toc-text">08 在线K12大班课：正面较量的时刻来了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#09-培训、图书之外，粉笔的第三个梦"><span class="toc-text">09 培训、图书之外，粉笔的第三个梦</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三章-一对一披荆斩棘：闯出自己的路"><span class="toc-text">第三章 一对一披荆斩棘：闯出自己的路</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-精锐教育的二次创业：既要上天，也要入地"><span class="toc-text">10 精锐教育的二次创业：既要上天，也要入地</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-徒手攀岩2020：VIPKID要做自己的摆渡人"><span class="toc-text">11 徒手攀岩2020：VIPKID要做自己的摆渡人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-掌门教育：第二场战争"><span class="toc-text">12 掌门教育：第二场战争</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-轻轻家教：接地生根，踏实成长"><span class="toc-text">13 轻轻家教：接地生根，踏实成长</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四章-AI互动课，下一个竞逐高低"><span class="toc-text">第四章 AI互动课，下一个竞逐高低</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#14-洋葱数学，厚积薄发的力量"><span class="toc-text">14 洋葱数学，厚积薄发的力量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-AI互动课，能否再造一个在线教育的奇迹？"><span class="toc-text">15 AI互动课，能否再造一个在线教育的奇迹？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第五章-素质教育初奏华美乐章"><span class="toc-text">第五章 素质教育初奏华美乐章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#16-火花思维：跑出在线数理思维的加速度"><span class="toc-text">16 火花思维：跑出在线数理思维的加速度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17-美术宝教育：跑出少儿美术的“势能差”"><span class="toc-text">17 美术宝教育：跑出少儿美术的“势能差”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#18-线下少儿英语的自我进击：于边界中重建城池"><span class="toc-text">18 线下少儿英语的自我进击：于边界中重建城池</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#19-少儿编程：爆发之后，重回理性"><span class="toc-text">19 少儿编程：爆发之后，重回理性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第六章-出发，挺进下沉市场"><span class="toc-text">第六章 出发，挺进下沉市场</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#20-思考乐：大湾区的又一匹K12黑马"><span class="toc-text">20 思考乐：大湾区的又一匹K12黑马</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#21-立思辰：用“大语文”破解K12市场的密码"><span class="toc-text">21 立思辰：用“大语文”破解K12市场的密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#22-“AI老师”下沉：想象空间在哪儿？"><span class="toc-text">22 “AI老师”下沉：想象空间在哪儿？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#23-下沉，下沉！"><span class="toc-text">23 下沉，下沉！</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第七章-新政下的求变之路"><span class="toc-text">第七章 新政下的求变之路</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#24-“合规”之年，进校类APP的生存考验"><span class="toc-text">24 “合规”之年，进校类APP的生存考验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#25-“民办摇号”：民办中小学发展的分水岭？"><span class="toc-text">25 “民办摇号”：民办中小学发展的分水岭？</span></a></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
+                        
+                        <a class="tag" href="/tags/#教育"
+                           title="教育">教育</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://aljun.me">Aljun</a></li>
+                        
+                        <li><a href="https://dongleizhang.github.io/">Donglei Zhang</a></li>
+                        
+                        <li><a href="http://www.choosefoto.com">CHOOSE FOTO</a></li>
+                        
+                        <li><a href="http://acge.ga/">A-C-G-E</a></li>
+                        
+                        <li><a href="http://weibo.com/icsszju?is_hot=1">Hang Ye</a></li>
+                        
+                        <li><a href="https://ferrinfriends.github.io/">Ferri</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'moliusmile';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/mo-liu-38-73">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/shuxin-yang-680304b5">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Shuxin Yang 2020
+                    <br>
+                    &hearts; &hearts; <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times </span> &hearts; &hearts;
+					<br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://moliusmile.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-88475808-1';
+    var _gaDomain = 'shuxinyang.com';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    var _baId = 'fa02b72eee073d39f5dca3d531c29928';
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://shuxinyang.com/aboutme/Denise2.jpg">
+</body>
+
+</html>

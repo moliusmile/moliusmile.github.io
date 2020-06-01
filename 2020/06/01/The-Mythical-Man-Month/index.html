@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shuxin Yang&#39;s blog | Coding and Running Girl">
+    <meta name="keyword" content="null">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="http://oho5zsu61.bkt.clouddn.com/favicon_love.png">
+    <link rel="alternate" type="application/atom+xml" title="Shuxin Yang" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        《人月神话》｜Shuxin Yang&#39;s blog
+        
+    </title>
+
+    <link rel="canonical" href="http://moliusmile.github.io/2020/06/01/The-Mythical-Man-Month/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_starry.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Shuxin Yang
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/aboutme/AboutMe.html">ABOUT ME</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">TAGS</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/works/">MY WORKS</a>
+                        </li>
+							
+						
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('http://oho5zsu61.bkt.clouddn.com/bg_sunset.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>《人月神话》</h1>
+                    
+                    <span class="meta">
+                         author Shuxin Yang
+                        <span>
+                         time 2020-06-01
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
+                        
+                        <a class="tag" href="/tags/#技术"
+                           title="技术">技术</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            《人月神话》
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <blockquote>
+<p>概念完整性是系统设计中最重要的考虑因素。</p>
+</blockquote>
+<h2 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h2><p><img src="http://shuxinyang.com/2020/06/01/The-Mythical-Man-Month/cover.jpg" alt=""></p>
+<ul>
+<li>作者：[美] Frederick P. Brooks, Jr.</li>
+<li>出版社：清华大学出版社</li>
+<li>出版时间：2015年4月</li>
+</ul>
+<h2 id="第1章-焦油坑"><a href="#第1章-焦油坑" class="headerlink" title="第1章 焦油坑"></a>第1章 焦油坑</h2><p>【内容】</p>
+<p>本章主要介绍编程系统产品的演进：</p>
+<ol>
+<li>相关功能的编程产品的成本，至少是已调试的程序的成本的3倍；</li>
+<li>相同功能的编程系统构件的成本至少是独立程序的3倍；</li>
+<li>编程系统产品的成本高达9倍，然而，只有它才是真正有用的产品，是大多数系统开发的目标。</li>
+</ol>
+<h2 id="第2章-人月神话"><a href="#第2章-人月神话" class="headerlink" title="第2章 人月神话"></a>第2章 人月神话</h2><p>【内容】</p>
+<p>本章主要介绍编程系统的进度安排：</p>
+<ol>
+<li>一个错误假设：一切都将运作良好，每一项任务仅花费它所“应该”花费的时间（乐观主义）。</li>
+<li>沟通所增加的负担由两个部分组成：培训和相互的交流。人员并不是越多越好，人数越多所需要的沟通越多。</li>
+<li>在早期进度策划时，允许充分的系统测试时间。</li>
+<li>向进度落后的项目中增加人手，只会使进度更加落后。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>第2章的大部分内容和项目管理学到的类似；不过提到的进度安排的经验法则倒是打破我平时的认识：1/3计划；1/6编码；1/4构件测试和早期系统测试；1/4系统测试，所有的构件已完成。</li>
+<li>我在平时的项目中给测试安排的时间是不充分的，反思下原因：一是时间紧，二是测试资源的缺乏，三对测试环节的重视不够。</li>
+</ol>
+<h2 id="第3章-外科手术队伍"><a href="#第3章-外科手术队伍" class="headerlink" title="第3章 外科手术队伍"></a>第3章 外科手术队伍</h2><p>【内容】</p>
+<p>本章主要介绍团队及分工：</p>
+<ul>
+<li>10人程序开发队伍建议如下构成：首席程序员，副手，程序职员，工具维护人员，测试人员，语言专家，管理员，编辑和2个文秘。</li>
+</ul>
+<h2 id="第4章-贵族专制、民主政治和系统设计"><a href="#第4章-贵族专制、民主政治和系统设计" class="headerlink" title="第4章 贵族专制、民主政治和系统设计"></a>第4章 贵族专制、民主政治和系统设计</h2><p>【内容】</p>
+<p>本章主要介绍概念完整性：</p>
+<ol>
+<li>在系统设计中，概念完整性应该是最重要的考虑因素。</li>
+<li>对于给定级别的功能，能用最简洁和直接的方式来指明事情的系统是最好的；系统的概念完整性决定了其使用的容易程度。</li>
+<li>具体实现中创造和发明的机会，并不会因为指定了外部技术说明而大为减少，相反创造性活动会因为规范化而得到增强，整个产品也一样。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>编程系统对简洁和直接的追求让我想起“奥卡姆剃刀原理”–简单有效原理。这个原理在产品设计，系统设计都是适用的。</li>
+<li>在系统多次迭代中，如何保证概念完整性，这是值得思考的。</li>
+</ol>
+<h2 id="第5章-画蛇添足"><a href="#第5章-画蛇添足" class="headerlink" title="第5章 画蛇添足"></a>第5章 画蛇添足</h2><p>【内容】</p>
+<ol>
+<li>结构师在开发第一个系统时，倾向于精炼和简洁；但对第二个系统却过分地设计，向系统添加很多修饰功能和想法。</li>
+<li>如何避免开发第二个系统所引起的后果，从而避免画蛇添足？<ul>
+<li>结构师可以有意识地关注这个系统的特殊危险，运用特别的自我约束准则，来避免那些功能上的过于修饰；根据系统基本理念及目的变更，舍弃一些功能。</li>
+<li>项目经理必须坚持至少拥有两个系统以上开发经验结构师的决定。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第6章-贯彻执行"><a href="#第6章-贯彻执行" class="headerlink" title="第6章 贯彻执行"></a>第6章 贯彻执行</h2><p>【内容】</p>
+<ul>
+<li>本章介绍如何贯彻执行结构师的决策，如何保持系统的概念完整性。主要分为手册、形式化定义、直接整合、会议和大会、多重实现、电话日志、产品测试等七个方面。</li>
+</ul>
+<p>【感想】</p>
+<ul>
+<li>概念完整性不仅在第一个系统设计环节很重要，在之后的每次系统迭代，以及具体执行环节也同样重要。这需要结构师和项目经理额外注意，从大局上对系统进行把握。</li>
+</ul>
+<h2 id="第7章-为什么巴比伦塔会失败"><a href="#第7章-为什么巴比伦塔会失败" class="headerlink" title="第7章 为什么巴比伦塔会失败"></a>第7章 为什么巴比伦塔会失败</h2><p>【内容】</p>
+<ol>
+<li>巴比伦塔失败是由于缺乏两个方面，其一是交流；其二是交流的结果–组织。</li>
+<li>大型编程项目中交流的途径：非正式途径，会议，工作手册。</li>
+<li>团队组织的目的是减少所需的交流和合作的数量，因此良好的团队组织是解决上述交流问题的关键措施。减少交流的方法是人力划分和限定职责范围。<ul>
+<li>产品负责人和技术主管是同一个人 -&gt; 很难</li>
+<li>产品负责人作为总指挥，技术主管充当其左右手 -&gt; 适合大型项目</li>
+<li>技术主管作为总指挥，产品负责人充当其左右手 -&gt; 适合小型团队</li>
+</ul>
+</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>产品负责人和技术主管的几种不同的组合方式对项目是有指导意义的。根据项目性质，找到合适的搭档/合作伙伴，通力配合，能够让项目开展得顺畅。</li>
+</ul>
+<h2 id="第8章-胸有成竹"><a href="#第8章-胸有成竹" class="headerlink" title="第8章 胸有成竹"></a>第8章 胸有成竹</h2><p>【内容】</p>
+<ul>
+<li>编程工作量是程序规模的幂函数</li>
+</ul>
+<h2 id="第9章-削足适履"><a href="#第9章-削足适履" class="headerlink" title="第9章 削足适履"></a>第9章 削足适履</h2><p>【内容】</p>
+<p>本章介绍编程系统中的规模控制：</p>
+<ol>
+<li>和制定驻留空间预算一样，应该制定总体规模的预算；和制定规模预算一样，应该制定后台存储访问的预算。</li>
+<li>在指明模块有多大的同时，确切定义模块的功能。</li>
+<li>培养开发人员从系统整体出发、面向用户的态度是软件编程管理人员最重要的职能。</li>
+</ol>
+<h2 id="第10章-提纲挈领"><a href="#第10章-提纲挈领" class="headerlink" title="第10章 提纲挈领"></a>第10章 提纲挈领</h2><p>【内容】</p>
+<p>本章介绍文档维护：</p>
+<ol>
+<li>文档的跟踪维护是项目监督和预警的机制。文档本身可以作为检查列表、状态控制，也可以作为汇报的数据基础。</li>
+<li>任何管理任务的关注焦点都是时间、地点、人员、项目内容和资金。</li>
+<li>为什么要有正式的文档？<ul>
+<li>书面记录决策是必要的。只有记录下来，分歧才会明朗，矛盾才会突出。</li>
+<li>文档能够作为同其他人的沟通渠道。</li>
+<li>项目经理的文档可以作为数据基础和检查列表。</li>
+</ul>
+</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>我目前在所跟进的项目中，接触较多的是时间、人员和项目内容。几乎没有接触资金（预算）和规模控制。应该多锻炼自己对项目有更全面的了解，提升ownership意识，慢慢尝试推进更复杂的项目。</li>
+</ul>
+<h2 id="第11章-未雨绸缪"><a href="#第11章-未雨绸缪" class="headerlink" title="第11章 未雨绸缪"></a>第11章 未雨绸缪</h2><p>【内容】</p>
+<p>本章介绍变化的应对。</p>
+<ol>
+<li>变化是与生俱来的，不是不合时宜和令人生厌的异常情况。</li>
+<li>软件维护包含对设计缺陷的修复。</li>
+<li>程序维护中的一个基本问题是–缺陷修复总会以固定（20%~50%）的几率引入新的bug。所以，整个过程是前进两步，后退一步。</li>
+</ol>
+<h2 id="第12章-干将莫邪"><a href="#第12章-干将莫邪" class="headerlink" title="第12章 干将莫邪"></a>第12章 干将莫邪</h2><p>【内容】</p>
+<p>本章介绍软件项目中的工具：</p>
+<ol>
+<li>首先是计算机设施。它需要硬件和使用安排策略；它需要操作系统，提供服务的方式必须明了；它需要语言，语言的使用方针必须明确；</li>
+<li>然后是实用程序、调试辅助程序、测试用例生成工具和处理文档的字处理系统。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>接受项目中的变化，为变更设计系统，为变更计划相应的组织架构。</li>
+<li>项目中尽量使用通用编程工具，而不是个性化的工具，因为后者会妨碍而非促进沟通。</li>
+</ol>
+<h2 id="第13章-整体部分"><a href="#第13章-整体部分" class="headerlink" title="第13章 整体部分"></a>第13章 整体部分</h2><p>【内容】</p>
+<ol>
+<li>剔除bug的设计：测试规格说明；自上而下的设计；结构化编程</li>
+<li>构建单元调试：本机调试；内存转储；快照；交互式调试；测试用例</li>
+<li>系统集成调试：使用经过调试的构件单元；搭建充分的测试平台；控制变更；一次添加一个构建；阶段（量子）化、定期变更</li>
+</ol>
+<h2 id="第14章-祸起萧墙"><a href="#第14章-祸起萧墙" class="headerlink" title="第14章 祸起萧墙"></a>第14章 祸起萧墙</h2><p>【内容】</p>
+<ol>
+<li>通常灾祸来自白蚁的肆虐，而不是龙卷风的侵袭。同样，项目进度经常以一种难以察觉，但是残酷无情的方式慢慢落后。</li>
+<li>里程碑：里程碑的选择只有一个原则，那就是里程碑必须是具体的、特定的、可度量的事件，能够进行清晰定义。</li>
+<li>进取：棒球队长知道，进取是很多优秀队员和团队不可缺少的心理素质。它表现为“比要求的跑得更快”，“比要求的移动得更加迅速”，“更加努力尝试”。对软件开发队伍来说，进取同样是非常必要的。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>进度偏离会影响团队士气，因此作为项目经理需要管理好项目进度，合理估算其中的变更和损失。</li>
+<li>在软件开发团队中，营造进取的氛围，进取提供了缓冲和储备，使开发队伍能够处理常规的灾祸。</li>
+</ol>
+<h2 id="第15章-另外一面"><a href="#第15章-另外一面" class="headerlink" title="第15章 另外一面"></a>第15章 另外一面</h2><p>【内容】</p>
+<ol>
+<li>对软件编程产品来说，程序向用户所呈现的和提供给机器识别的内容同样重要。</li>
+<li>需要什么样的文档：实用程序、验证程序（即测试用例）、修改程序</li>
+<li>流程图：一页纸的流程图是表达程序结构、阶段或步骤的一种非常基本的图示。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>好的开发人员不仅仅是开发高效的代码，还需要维护相应的文档，这样才构成完整的编程产品。</li>
+<li>项目管理人员需要在文档上加以规划和引导。</li>
+</ol>
+<h2 id="第16章-没有银弹"><a href="#第16章-没有银弹" class="headerlink" title="第16章 没有银弹"></a>第16章 没有银弹</h2><p>【内容】</p>
+<ol>
+<li>根本困难：不仅仅是在目力所及的范围内没有发现银弹，软件的特性本身也导致不大可能有任何的发明创新–能够像计算机硬件工业中的电子器件、晶体管、大规模集成一样–提高软件的生产率、可靠性和简洁程度。我们甚至不能期望每两年有两倍的增长。</li>
+<li>银弹的希望：Ada和其他高级编程语言、面向对象编程、人工智能、专家系统、“自动”编程、图形化编程、程序验证、环境和工具、工作站</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>软件方面没有银弹–即不太可能有突破性进步；但总有一些方法能够优化我们当前的项目。能够将平凡的工作做到极致也是一件不平凡的事。</li>
+</ul>
+<h2 id="第17章-再论“没有银弹”"><a href="#第17章-再论“没有银弹”" class="headerlink" title="第17章 再论“没有银弹”"></a>第17章 再论“没有银弹”</h2><p>【内容】</p>
+<ol>
+<li>向软件系统增加必要的复杂性：<ul>
+<li>层次化，通过分层的模块或者对象；</li>
+<li>增量化，使系统可以持续地运行。</li>
+</ul>
+</li>
+<li>OO：面向对象在整个开发周期中得到了应用，但是真正的获益只有在后续开发、扩展和维护活动中才能体现出来。</li>
+<li>重用：重用是一件说起来容易，做起来难的事情。它同时需要良好的设计和卓越的文档。即使我们看到了非常罕见的优秀设计，但如果没有好的文档，我们也不会看到能重用的构件。</li>
+<li>子弹的本质–形势没有发生变化。复杂性是我们这个行业的属性，而且复杂性是我们主要的限制。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>本章是对10年前提出的“没有银弹”（第16章）后引起的剧烈争论进行的说明，并更新了在1986年提出的观点。可以发现，大多数基本观点是没有发生变化的，其中复杂性仍然是行业的属性。</li>
+</ul>
+<h2 id="第18章-《人月神话》的观点：是与非"><a href="#第18章-《人月神话》的观点：是与非" class="headerlink" title="第18章 《人月神话》的观点：是与非"></a>第18章 《人月神话》的观点：是与非</h2><p>【内容】</p>
+<p>本章在多年之后，对之前章节所述内容以摘要的形式进行呈现，尤其是那些客观事实和经验中推广的法则。以下几点是之前没注意到但感触较深的：</p>
+<ol>
+<li>人们通常期望项目在接近结束时，软件项目能收敛得快一些，然而，情况却是越接近完成，收敛得越慢。</li>
+<li>人月是危险和带有欺骗性的神话，因为它暗示人员数量和时间是可以相互替换的。</li>
+<li>两个人的团队，其中一个是领导者，常常是最佳的人员使用方法（留意一下上帝对婚姻的设计）。</li>
+<li>一拥而上的开发方法是高成本、速度缓慢、低效的，开发出的产品无法进行概念上的集成。</li>
+<li>对于非常大型的项目，将体系结构方面的工作与具体实现相分离是获得概念完整性的强有力方法。（其同样适用于小型项目。）</li>
+<li>即使是大型的设计团队，设计结果也必须由一个或两个人来完成，以确保这些决定是一致的。</li>
+<li>战略上的突破常来自于对数据或表的重新表达。数据的表现形式是编程的根本。</li>
+<li>项目经理的基本职责是使每个人都向着相同的方向前进。</li>
+<li>项目经理的主要日常工作是沟通，而不是做出决定；文档使各项计划和决策在整个团队范围内得到交流。</li>
+<li>只要管理人员和技术人才的天赋允许，老板必须对他们的能力培养给予极大的关注，使管理人员和技术人才具有互换性；特别是希望在技术和管理角色之间自由地分配人手的时候。</li>
+<li>有时候必须回退，推翻顶层设计，重新开始。</li>
+<li>如果里程碑定义得非常明确，以至于无法自欺欺人时，程序员很少会就里程碑的进展弄虚作假。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>作为一本书，单独开一章对之前观点进行回顾和分析是比较少见的，这也只有在历史相对“悠久”的书籍中才有可能出现；但反观人生，是否可以对关键性的观点或者决策做一下记录，以便之后反思总结呢？</li>
+<li>管理不仅仅是一种职权，更是一种责任，一种艺术。如何让团队成员齐心协力，如何发挥每个人的才能，如何将项目完成得漂亮，这些都需要思考和实践。</li>
+</ol>
+<h2 id="第19章-20年后的《人月神话》"><a href="#第19章-20年后的《人月神话》" class="headerlink" title="第19章 20年后的《人月神话》"></a>第19章 20年后的《人月神话》</h2><p>【内容】</p>
+<ol>
+<li>《人月神话》是关于人与团队的书，所以它的淘汰过程会是缓慢的。</li>
+<li>结构师：委派一名产品结构师是最重要的行动。结构师负责产品所有方面的概念完整性，这些是用户能实际感受到的。</li>
+<li>概念完整性是产品质量的核心。</li>
+<li>定义用户群：用户群越大和越不确定，就越有必要明确地定义用户群，以获得概念完整性；为用户群的属性明确地记载各种猜测。清晰和错误都比模糊不清好得多。</li>
+<li>瀑布模型的基本谬误是它假设项目只经历一次过程，而且体系结构出色并易于使用，设计是合理可靠的，随着测试的进行，编码实现是可以修改和调整的。换句话说，瀑布模型假设所有错误发生在编码实现阶段，因此他们的修复可以很顺畅地穿插在单元和系统测试中。</li>
+<li>信息隐藏–现在常常内建于面向对象的编程中–是唯一提高软件设计水平的途径。</li>
+<li>“向进度落后的项目中添加人手总会增加项目的成本，但并不一定总会使项目更加落后。”特别地，由于新成员总会立刻带来需要数周来弥补的负面效应，所以在项目早期添加额外的人力比在后期添加更加安全一些。</li>
+<li>《人月神话》的大部分文章在讲述软件工程管理方面的事情，较少涉及技术问题。因为对于项目的成功而言，项目人员的素质、人员的组织和管理是比使用的工具或采用的技术方法更重要的因素。</li>
+<li>传统产业倾向于被大型公司以已指定的管理风格和企业文化所支配。始于数百家创业公司的成品软件产业，行事自由，更加关注结果，而不是流程。</li>
+<li>软件系统可能是人类创造中最错综复杂的事物。这个复杂的行业需要：进行持续的发展；学习使用更大的要素来开发；新工具的最佳使用；经论证的工程管理方法的最佳应用；良好的自我判断以及能够使我们认识到自己的不足–上帝赐予的谦卑。</li>
+</ol>
+<p>【感想】</p>
+<ol>
+<li>好的软件开发不仅仅是开发本身，而且涉及用户理解、产品设计、工程架构、团队管理等一系列“艺术”。</li>
+<li>除了软件工程，其他需要人合作的项目，最主要的都不是技术，而是团队中的人。</li>
+<li>如何组建团队，沟通协调，调动积极性，这些都是软件工程管理者需要掌握的。</li>
+</ol>
+<h2 id="附录一：名家谈人月"><a href="#附录一：名家谈人月" class="headerlink" title="附录一：名家谈人月"></a>附录一：名家谈人月</h2><p>【内容】</p>
+<ol>
+<li>有些书对于读者和作者像是年金，它们年复一年地分红。《人月神话》就是这么一本书。</li>
+<li>软件行业实际上是“精英行业”。高素质、具有丰富经验的需求分析人员、结构师往往是软件企业的核心骨干人员，相应的一般编程人员流动性会大一些。</li>
+<li>在实际经验中，Brooks体会到开发大型软件过程中，难以汇集参与人员的设计理念，然后提供给使用者一致的设计概念，因而导致软件的高度复杂性，最终使得大型软件系统往往会进度落后、成本暴涨及错误百出，就是所谓的软件危机。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>读懂一本书需要相关经验，写一本书更需要相关经验。书籍结合实际能够让日常的工作做得更好。</li>
+</ul>
+<h2 id="附录二：名著评人月"><a href="#附录二：名著评人月" class="headerlink" title="附录二：名著评人月"></a>附录二：名著评人月</h2><p>【内容】</p>
+<ol>
+<li>数据结构设计是程序构造过程的中心环节。一旦数据结构安排好了，算法就会瓜熟蒂落，编码也比较容易。</li>
+<li>有两种复杂性，即偶发的和本质的。前者由开发人员和方法引起，后者是解决问题所固有的。</li>
+<li>搭建一个软件系统最困难的部分是决定究竟要做什么。正如爱因斯坦所说的，问题本身常常比解决它的方法更重要。</li>
+<li>Brooks把架构师的角色定义为两部分：<ul>
+<li>首先，代表顾客的利益</li>
+<li>为了做到这一点，需要从头到尾了解整个产品。</li>
+</ul>
+</li>
+<li>架构告诉我们发生什么，实现告诉我们如何使它发生。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>对架构了解地更多了一些：架构不仅仅是熟稔技术框架，工程结构；还需要从用户、产品角度进行思考。在怎么做之前最重要的是知道做什么。</li>
+</ul>
+<h2 id="附录三：读者感言"><a href="#附录三：读者感言" class="headerlink" title="附录三：读者感言"></a>附录三：读者感言</h2><p>【内容】</p>
+<ol>
+<li>要让一个项目顺利进行，首先要有良好的时程规划，考虑所有的因素；其次，程序人员要有勇气，不要妥协，一定要坚持自己预估的时程。</li>
+<li>软件工程是为开发软件服务的，标准不是目的，只是手段。《人月神话》没有讲标准，但它为怎样做好一个项目提供了一些启发。</li>
+<li>无论是产品/开发人员的区分，还是外科手术式队伍的引入，核心原则都是：职能细分，并将高要求的工作集中在少数人手中。提高软件项目的质量的最好办法之一，就是找到合适的人。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>本章是几位读者结合自身工作情况，谈了谈对《人月神话》的感想。总体上，这本书能够一次又一次地引起巨大轰动，是因为它贴近软件工程的实际情况。这本书能让相关从业者感觉是对自己工作的一次真实描绘，对其中痛点难点的直接展现。</li>
+</ul>
+
+                <hr>
+                
+                <!-- 多说 Share start -->
+                <div class="ds-share"
+                     style="text-align: right"
+                     data-thread-key="2020/06/01/The-Mythical-Man-Month/"
+                     data-title="《人月神话》"
+                     data-url="http://moliusmile.github.io/2020/06/01/The-Mythical-Man-Month/"
+                     data-images=""
+                     data-content="
+概念完整性是系统设计中最重要的考虑因素。
+
+版本信息
+
+作者：[美] Frederick P... | Shuxin Yang&#39;s blog ">
+                    <div class="ds-share-inline">
+                        <ul class="ds-share-icons-16">
+                            <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                            <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                            <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                            <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                        </ul>
+                        <div class="ds-share-icons-more">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2020/05/07/Thinking-Fast-And-Slow/" data-toggle="tooltip" data-placement="top"
+                           title="《思考，快与慢》">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                         data-thread-key="2020/06/01/The-Mythical-Man-Month/"
+                         data-title="《人月神话》"
+                         data-url="http://moliusmile.github.io/2020/06/01/The-Mythical-Man-Month/">
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#版本信息"><span class="toc-text">版本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第1章-焦油坑"><span class="toc-text">第1章 焦油坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第2章-人月神话"><span class="toc-text">第2章 人月神话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第3章-外科手术队伍"><span class="toc-text">第3章 外科手术队伍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第4章-贵族专制、民主政治和系统设计"><span class="toc-text">第4章 贵族专制、民主政治和系统设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第5章-画蛇添足"><span class="toc-text">第5章 画蛇添足</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第6章-贯彻执行"><span class="toc-text">第6章 贯彻执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第7章-为什么巴比伦塔会失败"><span class="toc-text">第7章 为什么巴比伦塔会失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第8章-胸有成竹"><span class="toc-text">第8章 胸有成竹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第9章-削足适履"><span class="toc-text">第9章 削足适履</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第10章-提纲挈领"><span class="toc-text">第10章 提纲挈领</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第11章-未雨绸缪"><span class="toc-text">第11章 未雨绸缪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第12章-干将莫邪"><span class="toc-text">第12章 干将莫邪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第13章-整体部分"><span class="toc-text">第13章 整体部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第14章-祸起萧墙"><span class="toc-text">第14章 祸起萧墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第15章-另外一面"><span class="toc-text">第15章 另外一面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第16章-没有银弹"><span class="toc-text">第16章 没有银弹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第17章-再论“没有银弹”"><span class="toc-text">第17章 再论“没有银弹”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第18章-《人月神话》的观点：是与非"><span class="toc-text">第18章 《人月神话》的观点：是与非</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第19章-20年后的《人月神话》"><span class="toc-text">第19章 20年后的《人月神话》</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#附录一：名家谈人月"><span class="toc-text">附录一：名家谈人月</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#附录二：名著评人月"><span class="toc-text">附录二：名著评人月</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#附录三：读者感言"><span class="toc-text">附录三：读者感言</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
+                        
+                        <a class="tag" href="/tags/#技术"
+                           title="技术">技术</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
+                        
+                        <li><a href="http://aljun.me">Aljun</a></li>
+                        
+                        <li><a href="https://dongleizhang.github.io/">Donglei Zhang</a></li>
+                        
+                        <li><a href="http://www.choosefoto.com">CHOOSE FOTO</a></li>
+                        
+                        <li><a href="http://acge.ga/">A-C-G-E</a></li>
+                        
+                        <li><a href="http://weibo.com/icsszju?is_hot=1">Hang Ye</a></li>
+                        
+                        <li><a href="https://ferrinfriends.github.io/">Ferri</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'moliusmile';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/mo-liu-38-73">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/moliusmile">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/shuxin-yang-680304b5">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Shuxin Yang 2020
+                    <br>
+                    &hearts; &hearts; <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times </span> &hearts; &hearts;
+					<br>
+                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://moliusmile.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-88475808-1';
+    var _gaDomain = 'shuxinyang.com';
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    var _baId = 'fa02b72eee073d39f5dca3d531c29928';
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','null','2.0.0');
+</script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="http://shuxinyang.com/aboutme/Denise2.jpg">
+</body>
+
+</html>

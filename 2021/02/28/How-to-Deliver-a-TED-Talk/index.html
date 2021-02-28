@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        moliu&#39;s Blog 建站小记｜Shuxin Yang&#39;s blog
+        《TED演讲的秘密》｜Shuxin Yang&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="http://moliusmile.github.io/2016/12/05/build-a-blog/">
+    <link rel="canonical" href="http://moliusmile.github.io/2021/02/28/How-to-Deliver-a-TED-Talk/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -161,21 +161,21 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>moliu&#39;s Blog 建站小记</h1>
+                    <h1>《TED演讲的秘密》</h1>
                     
                     <span class="meta">
                          author Shuxin Yang
                         <span>
-                         time 2016-12-05
+                         time 2021-02-28
                          </span>
                     </span>
                     <div class="tags text-center">
                         
-                        <a class="tag" href="/tags/#hexo"
-                           title="hexo">hexo</a>
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
                         
-                        <a class="tag" href="/tags/#github"
-                           title="github">github</a>
+                        <a class="tag" href="/tags/#表达"
+                           title="表达">表达</a>
                         
                     </div>
                 </div>
@@ -184,7 +184,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            moliu's Blog 建站小记
+            《TED演讲的秘密》
         </span>
     </div>
 </header>
@@ -195,54 +195,148 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h2 id="念念不忘-必有行动"><a href="#念念不忘-必有行动" class="headerlink" title="念念不忘 必有行动"></a>念念不忘 必有行动</h2><p>搭建自己专属blog的想法由来已久，萌发于半年前见到知乎大神<a href="http://aljun.me/" target="_blank" rel="external">Aljun</a>的Blog，孕育于几个月前将自己的知乎签名改为<code>想做数据分析，想搭个人博客的经济学girl~ Hamilton粉</code>。而化想法为行动的是四天前（12月1日）的一个清晨，某位学长向我推荐了“<a href="http://moliu.me/2016/12/05/Two-Questions/" target="_blank" rel="external">科学的方法 公正的态度 果断的决心</a>”这篇文章。顿感相见恨晚忍不住和大家分享，就匆匆注册了<a href="http://www.jianshu.com/p/45664a8af832" target="_blank" rel="external">简书</a>然后发了上去。后来学长居然给我打赏了30大洋，理由是想看看简书平台提现时是否有手续费，结果是——<br><img src="http://ohpptajtc.bkt.clouddn.com/jianshu.PNG" alt=""><br>结论，好坑。BLOG搭搭搭，开拓属于自己的一片小空间，自由自在~无拘无束~<br>finally，从1号晚上到今天上午，moliu’s blog终于搭建完成。进展大概如下</p>
-<h2 id="12月1日"><a href="#12月1日" class="headerlink" title="12月1日"></a>12月1日</h2><p>用github搭建Blog1.0版，此时的blog没目录，样式也不好看，教程参考</p>
-<ul>
-<li><a href="http://blog.csdn.net/renfufei/article/details/37725057/" target="_blank" rel="external">创建GitHub技术博客全攻略</a></li>
-</ul>
-<h2 id="12月2日"><a href="#12月2日" class="headerlink" title="12月2日"></a>12月2日</h2><p>这一天做了三件事，二成功一失败。<code>先讲失败的</code>，经小伙伴指点和查阅资料，准备利用github+<a href="http://jekyll.com.cn/" target="_blank" rel="external">jekyll</a>搭一个blog。好处是不用自己搭服务器，上手容易<a href="http://jekyllthemes.org/" target="_blank" rel="external">jekyll的样式</a>多。但jekyll在windows环境下使用比较麻烦，需要先后安装Ruby、DevKit、Rough。教程主要看这篇<a href="https://www.zybuluo.com/mdeditor#591278" target="_blank" rel="external">[环境搭建]Windows下安装Ruby和Jekyll</a>。然后windows下各种坑（差点以为失足少女要放弃了），一直在安装Devkit时出错。进行到第三天时放弃jekyll，失败。<code>第一件成功</code>是在<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">万网</a>注册域名，在<code>moliu.me</code> <code>yangshuxin.com</code> <code>yangshuxin.me</code> 三个域名之间纠结了好久最后选了第一个。（表示好想把另外两个也买下啊啊，毕竟专属）。买好域名之后需要将github进行绑定，这样才能在登录<code>moliusmile.github.io</code>时自动跳转到<code>moliu.me</code>，教程参考</p>
-<ul>
-<li><a href="http://blog.csdn.net/qq_29232943/article/details/52786603" target="_blank" rel="external">GitHub Pages 绑定来自阿里云的域名</a>。</li>
-</ul>
-<p><code>第二件成功</code>的是将安装git到本地，目的是本地编辑好之后可以push到github上，其中SSH设置略麻烦。</p>
-<h2 id="12月3日"><a href="#12月3日" class="headerlink" title="12月3日"></a>12月3日</h2><p>继续前一天的jekyll的失败安装，然后转向另一个对windows系统比较亲近的Hexo,安装环境是nodejs。这两篇教程不错：</p>
-<ul>
-<li><a href="https://segmentfault.com/a/1190000005602881" target="_blank" rel="external">windows 10 下配置安装node.js</a></li>
-<li><a href="http://www.jianshu.com/p/0f4cc12a1635" target="_blank" rel="external">用hexo在github上挂博客</a></li>
-</ul>
-<p>还欣赏了官网和知乎上各种Hexo主题，觉得<a href="https://haojen.github.io/" target="_blank" rel="external">Haojen</a>以及<a href="http://www.ezlippi.com/" target="_blank" rel="external">浮生志</a>这两个还不错。前者有图片背景和头像，后者更简洁一些。（我最后选择了前者）。</p>
-<h2 id="12月4日"><a href="#12月4日" class="headerlink" title="12月4日"></a>12月4日</h2><p>这一天还在安装hexo,其中遇到各种bug，百度+google一般都能解决，其中遇到几个关键性错误,这里重点mark一下：</p>
-<h4 id="一、淘宝npm源的使用"><a href="#一、淘宝npm源的使用" class="headerlink" title="一、淘宝npm源的使用"></a>一、淘宝npm源的使用</h4><p><strong>问题</strong>：安装hexo时,在GitBash中运行npm install -g hexo -cli 总是超时报错，原因是国内使用npm时总是被block（有翻墙工具也没用啊~衰~）。<br><strong>解决</strong>：全局配置淘宝镜像，打开.npmrc文件（在用户主目录下）<br>加入以下配置信息：</p>
-<pre><code>registry = http://registry.npm.taobao.org
-</code></pre><h4 id="二、系统环境的配置"><a href="#二、系统环境的配置" class="headerlink" title="二、系统环境的配置"></a>二、系统环境的配置</h4><p><strong>问题</strong>：hexo已经安装成功，但查看hexo version时却显示 hexo:command not found。原因是<em>我的电脑-属性-高级系统设置-环境变量-<code>系统变量</code></em>中需要增加新内容。<br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_error.png" alt="此处输入图片的描述"><br><strong>解决</strong>：记下hexo的安装路径，然后添加到系统变量中。比如我这里是<code>D:\nodejs\node_global</code><br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_path.png" alt="此处输入图片的描述"><br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_update.png" alt="此处输入图片的描述"></p>
-<h4 id="三、修改config-yml中deploy之后"><a href="#三、修改config-yml中deploy之后" class="headerlink" title="三、修改config.yml中deploy之后"></a>三、修改config.yml中deploy之后</h4><p><strong>错误</strong>：</p>
-<blockquote>
-<p>$ hexo d<br>ERROR Deployer not found: Git</p>
+                <blockquote>
+<p>你也许永远没有机会真正地登上TED舞台，但你依然需要用激励他人的方式去传递自己的想法。</p>
 </blockquote>
-<p><strong>解决</strong>：</p>
-<blockquote>
-<p>npm install hexo-deployer-git –save</p>
-</blockquote>
-<p>然后hexo就安装成功了，屏幕跳出如下画面时，我瞬间感觉打开了新世界的大门。<br><img src="http://ohpptajtc.bkt.clouddn.com/hexo_picture.png" alt="此处输入图片的描述"></p>
-<h2 id="12月5日"><a href="#12月5日" class="headerlink" title="12月5日"></a>12月5日</h2><p>按照模板教程<a href="https://haojen.github.io/2016/08/06/Anisina-%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_blank" rel="external">Anisina-中文使用教程</a>一点点配置，一切以好看好看为首要标准，然后就是你们现在看到的<a href="http://moliu.me/" target="_blank" rel="external">moliu’s Blog</a>啦  ^。^<br>还发现了好玩的<a href="http://emoji.codes" target="_blank" rel="external">emoji</a>,可以使文章更可爱 ：smile:</p>
-<h2 id="功能总结和to-do-list"><a href="#功能总结和to-do-list" class="headerlink" title="功能总结和to do list"></a>功能总结和to do list</h2><p> [get] 评论功能<br> [get] 百度统计<br> [get] 顶端爱心<br> [get] tag检索<br> [get] 友情链接<br> [get] AboutMe页面<br> [non] 打赏功能<br> [non] 点赞功能<br> [non] 版权说明<br> [non] swiftfy搜索<br> [non] 评论功能完善，最好不用第三方插件（觉得<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>的评论插件略丑，<a href="www.disqus.com">Disqus</a>因为墙内很多人上不了）。现在暂时用的是多说。</p>
-<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><ul>
-<li>友链里的各位，他们给了我许多技术上的指导。</li>
-<li>将Shadowsocks赠与我的zebang，翻墙速度还是很不错的。</li>
-<li>看完此文的各位，真诚期待您留下宝贵的建议，让我将这片小小的空间建设地更好。</li>
+<h2 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h2><p><img src="http://shuxinyang.com/2021/02/28/How-to-Deliver-a-TED-Talk/cover.jpg" alt=""></p>
+<ul>
+<li>出版社：中国人民大学出版社</li>
+<li>出版时间：2014年4月</li>
+<li>荐书人：上官老师</li>
 </ul>
-<p><img src="http://oho5zsu61.bkt.clouddn.com/favicon_love.png" alt="此处输入图片的描述"></p>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>【内容】</p>
+<ol>
+<li>TED代表着Technology、Entertainment和Design。</li>
+<li>TED的使命是分享并推广有价值有意义的创意灵感。</li>
+<li>你也许永远没有机会真正地登上TED舞台，但你依然需要用激励他人的方式去传递自己的想法。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>我想学习如何演讲的契机，一是为我之后可能的登台演讲做准备；二是提升自己传递想法的能力。</li>
+<li>在人与人链接的社会，如何更好地沟通，如何传播自己的思想，是至关重要的。</li>
+</ul>
+<h2 id="01-确定主题：明确你要“传播的观点”和你的“角色定位”"><a href="#01-确定主题：明确你要“传播的观点”和你的“角色定位”" class="headerlink" title="01 确定主题：明确你要“传播的观点”和你的“角色定位”"></a>01 确定主题：明确你要“传播的观点”和你的“角色定位”</h2><p>【内容】</p>
+<ol>
+<li>演讲角色“定位”：教育者，娱乐者，变革推动者</li>
+<li>选择话题时要进行深层次的以结果为导向的反思。</li>
+<li>演讲者常犯的一个最大的错误就是试图通过一次演讲传达一生所学，其实，专注于一个概念可以让你更清晰地编辑你的材料。</li>
+<li>讨论你“熟悉与热爱”的话题。</li>
+<li>演讲的目的是“给予”，出场是为了分享我所知道的东西。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>演讲首先要专注于一个话题，目的是分享我的观点。</li>
+</ul>
+<h2 id="02-构思讲稿：观点是脊柱，论点是肋骨，论据是血肉"><a href="#02-构思讲稿：观点是脊柱，论点是肋骨，论据是血肉" class="headerlink" title="02 构思讲稿：观点是脊柱，论点是肋骨，论据是血肉"></a>02 构思讲稿：观点是脊柱，论点是肋骨，论据是血肉</h2><p>【内容】</p>
+<ol>
+<li>尽管TED以讲述精彩的故事著称，但事实上，大部分演讲者都是以道理为主，然后用多个故事作为论据支撑，丰富演讲内容。通常，讲故事的演讲者会用第一人称展开叙述。</li>
+<li>逻辑在演讲中的应用：归纳推理（观点在开头或结尾），演绎推理（观点常在结尾）</li>
+<li>兼具论点和论据的5要素演讲提纲<br>导论-&gt;A部分论据-&gt;A部分论点-&gt;B部分论据-&gt;B部分论点-&gt;C部分论据-&gt;C部分论点-&gt;结论</li>
+<li>除了故事外的其他形式：统计、引用、举例、假设</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>演讲不仅要以故事感染听众，其内在也需要有一定的逻辑主线。</li>
+</ul>
+<h2 id="03-编排故事：“英雄之旅”是最基础的故事讲述模式"><a href="#03-编排故事：“英雄之旅”是最基础的故事讲述模式" class="headerlink" title="03 编排故事：“英雄之旅”是最基础的故事讲述模式"></a>03 编排故事：“英雄之旅”是最基础的故事讲述模式</h2><p>【内容】</p>
+<ol>
+<li>讲述“亲身经历”或“亲自观察”到的故事：一堂课；决定性的时刻；克服弱点</li>
+<li>使用“英雄之旅”的模式：正常世界-冒险召唤-拒斥召唤-见导师-越过第一道边界-考验、伙伴、敌人-接近最深的洞穴-磨难-报酬-返回的路-复活-携万能药回归</li>
+<li>伟大故事的标志，是通过诠释让听众逐层领会其中的智慧。</li>
+<li>通过“外貌与对话”让人物变得鲜活：拥有弱点和复杂人性的真实人物才是所有引人入胜故事的基础。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>快乐是比痛苦更有效的长效激励；使用积极的故事远比使用消极的故事要成功。</li>
+<li>通过拥抱人类的多样性，我们将找到获得真正幸福的可靠方法。</li>
+</ul>
+<h2 id="04-把握关键：口号、开场白、过渡与结尾"><a href="#04-把握关键：口号、开场白、过渡与结尾" class="headerlink" title="04 把握关键：口号、开场白、过渡与结尾"></a>04 把握关键：口号、开场白、过渡与结尾</h2><p>【内容】</p>
+<ol>
+<li>将观点提炼为口号：控制在3-12个词；以行动为中心；富有韵律；至少重复3次</li>
+<li>最引人入胜的三种开场方式：<ul>
+<li>以“有针对性的故事”开场</li>
+<li>以“震撼人心的事实”开场</li>
+<li>以“有影响力的问题”开场</li>
+</ul>
+</li>
+<li>过渡：好的过渡能精准地回顾前一部分，同时能巧妙地预告下一部分。它还能给观众提供宝贵的时间，将刚才所讲的内容同演讲的整体逻辑联系起来，并同个人经历联系起来。</li>
+<li>结尾：一种有效的表明结尾的方法是缩短你的句子，在声音中加入激情。用“你，我们，大家”来代替“我”。</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>内容才是王道。目标应该是成为一个能演讲的专家，而不是一个专业演说家。</li>
+</ul>
+<h2 id="05-调动情绪：语言技巧与非语言技巧完美配合"><a href="#05-调动情绪：语言技巧与非语言技巧完美配合" class="headerlink" title="05 调动情绪：语言技巧与非语言技巧完美配合"></a>05 调动情绪：语言技巧与非语言技巧完美配合</h2><p>【内容】</p>
+<ol>
+<li>语言技巧：<ul>
+<li>语气热情谦逊（语言表现出一种极具感染力的好奇、探索欲和敬畏心）</li>
+<li>绝对不要使用口头禅</li>
+<li>发挥停顿的力量</li>
+<li>改变语速、音量和音调。打造有变化的声音</li>
+</ul>
+</li>
+<li>非语言技巧<ul>
+<li>双手自然下垂</li>
+<li>双腿采用模特站姿</li>
+<li>手势一定要有，但不能使用过度</li>
+<li>表情配合内容，眼神与观众交流（真诚微笑；眼神接触）</li>
+</ul>
+</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>当演讲者走上讲台，就要把自己变成观众最亲密无间的朋友，而不是表现得过于专业或聪慧。因此要使用日常用语，也要能在台上释放最愉悦和最脆弱的时刻。</li>
+</ul>
+<h2 id="06-善用工具：用与不用的艺术"><a href="#06-善用工具：用与不用的艺术" class="headerlink" title="06 善用工具：用与不用的艺术"></a>06 善用工具：用与不用的艺术</h2><p>【内容】</p>
+<ol>
+<li>幻灯片：尽量不用。要有不用幻灯片演讲的能力。除非两个例外：<ul>
+<li>演讲者有能够极大充实演讲内容的个人照片；</li>
+<li>演讲者需要展示数据</li>
+</ul>
+</li>
+<li>视频：尽量不用。如果要用需要注意以下几点：<ul>
+<li>视频长度最好在30秒以内</li>
+<li>站在一侧与听众一起观看视频</li>
+<li>对无声视频进行解说</li>
+</ul>
+</li>
+<li>讲台：尽量不用。除非三个理由：<ul>
+<li>演讲者需要刻意地展现力量和权威</li>
+<li>由活动或观众的规格而定的</li>
+<li>演讲者需要依靠笔记</li>
+</ul>
+</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>工具只是辅助演讲，核心还是在于演讲本身，不能让工具令观众分心。即使要用也要注意“越少越好”的原则。</li>
+</ul>
+<h2 id="07-其他准备：优秀的演讲要重视每一个细节"><a href="#07-其他准备：优秀的演讲要重视每一个细节" class="headerlink" title="07 其他准备：优秀的演讲要重视每一个细节"></a>07 其他准备：优秀的演讲要重视每一个细节</h2><p>【内容】</p>
+<ol>
+<li>穿着：穿着舒适，作真实的自己，符合自己的职业</li>
+<li>活出自己的热情，真实地信奉一个值得传播的观点</li>
+<li>练习：练习的目标是实现对话式演讲，避免死记硬背或是直接读稿；列出演讲提纲，而不是逐字稿。</li>
+<li>介绍词：介绍演讲对于听众的益处；将主题相关度扩展到最大；将履历资料减至最少。</li>
+<li>“病毒式传播”的视频特征：出人意料、创新、情感诉求</li>
+</ol>
+<p>【感想】</p>
+<ul>
+<li>看演讲相关的书以及视频并不能成为优秀的演讲者，唯一可行的方法就是克服恐惧，在各种演讲场合不断打磨自己的演讲技巧。</li>
+</ul>
 
                 <hr>
                 
                 <!-- 多说 Share start -->
                 <div class="ds-share"
                      style="text-align: right"
-                     data-thread-key="2016/12/05/build-a-blog/"
-                     data-title="moliu&#39;s Blog 建站小记"
-                     data-url="http://moliusmile.github.io/2016/12/05/build-a-blog/"
+                     data-thread-key="2021/02/28/How-to-Deliver-a-TED-Talk/"
+                     data-title="《TED演讲的秘密》"
+                     data-url="http://moliusmile.github.io/2021/02/28/How-to-Deliver-a-TED-Talk/"
                      data-images=""
-                     data-content="念念不忘 必有行动搭建自己专属blog的想法由来已久，萌发于半年前见到知乎大神Aljun的Bl... | Shuxin Yang&#39;s blog ">
+                     data-content="
+你也许永远没有机会真正地登上TED舞台，但你依然需要用激励他人的方式去传递自己的想法。
+
+版... | Shuxin Yang&#39;s blog ">
                     <div class="ds-share-inline">
                         <ul class="ds-share-icons-16">
                             <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -260,15 +354,10 @@
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/12/06/Hexo-note/" data-toggle="tooltip" data-placement="top"
-                           title="Blog写作常用指令">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2016/12/05/Two-Questions/" data-toggle="tooltip" data-placement="top"
-                           title="科学的方法 公正的态度 果断的决心">Next Post &rarr;</a>
+                        <a href="/2021/02/28/Gain-and-Loss-of-Economic-Change/" data-toggle="tooltip" data-placement="top"
+                           title="《历代经济变革得失》 吴晓波">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -277,9 +366,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                         data-thread-key="2016/12/05/build-a-blog/"
-                         data-title="moliu&#39;s Blog 建站小记"
-                         data-url="http://moliusmile.github.io/2016/12/05/build-a-blog/">
+                         data-thread-key="2021/02/28/How-to-Deliver-a-TED-Talk/"
+                         data-title="《TED演讲的秘密》"
+                         data-url="http://moliusmile.github.io/2021/02/28/How-to-Deliver-a-TED-Talk/">
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -291,7 +380,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#念念不忘-必有行动"><span class="toc-text">念念不忘 必有行动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月1日"><span class="toc-text">12月1日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月2日"><span class="toc-text">12月2日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月3日"><span class="toc-text">12月3日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月4日"><span class="toc-text">12月4日</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、淘宝npm源的使用"><span class="toc-text">一、淘宝npm源的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、系统环境的配置"><span class="toc-text">二、系统环境的配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、修改config-yml中deploy之后"><span class="toc-text">三、修改config.yml中deploy之后</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12月5日"><span class="toc-text">12月5日</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#功能总结和to-do-list"><span class="toc-text">功能总结和to do list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#鸣谢"><span class="toc-text">鸣谢</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#版本信息"><span class="toc-text">版本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引言"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#01-确定主题：明确你要“传播的观点”和你的“角色定位”"><span class="toc-text">01 确定主题：明确你要“传播的观点”和你的“角色定位”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#02-构思讲稿：观点是脊柱，论点是肋骨，论据是血肉"><span class="toc-text">02 构思讲稿：观点是脊柱，论点是肋骨，论据是血肉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#03-编排故事：“英雄之旅”是最基础的故事讲述模式"><span class="toc-text">03 编排故事：“英雄之旅”是最基础的故事讲述模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#04-把握关键：口号、开场白、过渡与结尾"><span class="toc-text">04 把握关键：口号、开场白、过渡与结尾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#05-调动情绪：语言技巧与非语言技巧完美配合"><span class="toc-text">05 调动情绪：语言技巧与非语言技巧完美配合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#06-善用工具：用与不用的艺术"><span class="toc-text">06 善用工具：用与不用的艺术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#07-其他准备：优秀的演讲要重视每一个细节"><span class="toc-text">07 其他准备：优秀的演讲要重视每一个细节</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -313,11 +402,11 @@
                     </h5>
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#hexo"
-                           title="hexo">hexo</a>
+                        <a class="tag" href="/tags/#book"
+                           title="book">book</a>
                         
-                        <a class="tag" href="/tags/#github"
-                           title="github">github</a>
+                        <a class="tag" href="/tags/#表达"
+                           title="表达">表达</a>
                         
                     </div>
                 </section>
